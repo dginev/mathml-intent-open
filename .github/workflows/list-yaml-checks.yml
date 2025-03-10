@@ -1,0 +1,15 @@
+name: Validate-YAML-lists
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-yaml-open-concept-list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate YAML intent lists
+        run: yamllint -c _config_yamllint.yml open.yml
