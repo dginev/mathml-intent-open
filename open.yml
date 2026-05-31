@@ -136,6 +136,21 @@ concepts:
           - https://www.encyclopediaofmath.org/index.php/Adjoint_action
         alias:
           - adjoint-endomorphism
+      - concept: adjoint-action
+        arity: 2
+        en: adjoint action of $lie-group on $lie-algebra
+        property: function
+        area: lie algebra
+        mathml:
+          - <math><mrow intent="adjoint-action($lie-group,$lie-algebra)"><mpadded lspace="0"><mi>ad</mi></mpadded><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="lie-group">g</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="lie-algebra">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+          - <math><msub intent='adjoint-action($a1)'><mi>ad</mi><mi arg='a1'>f</mi></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Adjoint_representation_of_a_Lie_algebra
+          - https://en.wikipedia.org/wiki/Adjoint_representation
+          - https://ncatlab.org/nlab/show/adjoint+action
+          - https://www.encyclopediaofmath.org/index.php/Adjoint_action
+        alias:
+          - adjoint-endomorphism
       - concept: adjoint-representation
         arity: 1
         en: adjoint representation of $1
