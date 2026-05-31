@@ -9693,15 +9693,6 @@ concepts:
           - https://dlmf.nist.gov/6.2#ii
           - https://dlmf.nist.gov/6.2#E9
           - https://dlmf.nist.gov/6.2#E10
-      - concept: size-of-test
-        arity: 0
-        en: size of test
-        property: symbol
-        area: statistics
-        mathml:
-          - <math><mi intent='size-of-test'>α</mi></math>
-        urls:
-          - https://en.wikipedia.org/wiki/Size_(statistics)
       - concept: skewes-number
         arity: 1
         en: skewes number of $1
