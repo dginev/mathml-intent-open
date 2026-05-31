@@ -66,13 +66,14 @@ concepts:
           - https://en.wikipedia.org/wiki/Anno_Domini
       - concept: additive-inverse
         arity: 1
-        en: additive inverse of $1
+        en: additive inverse of $arg
         property: prefix
         area: abstract algebra
         mathml:
-          - <math><mrow intent='additive-inverse($a1)'><mo>-</mo><mi arg='a1'>n</mi></mrow></math>
+          - <math><mrow intent="additive-inverse($arg)"><mo form="prefix" stretchy="false" lspace="0em" rspace="0em" intent="additive-inverse($arg)">−</mo><mi arg="arg">n</mi></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Additive_inverse
+          - https://www.merriam-webster.com/dictionary/additive%20inverse
         alias:
           - opposite
           - sign-change
@@ -122,12 +123,12 @@ concepts:
           - https://en.wikipedia.org/wiki/Adjoint
           - https://ncatlab.org/nlab/show/adjoint
       - concept: adjoint-action
-        arity: 1
-        en: adjoint action of $1
-        property: function/msub
+        arity: 2
+        en: adjoint action of $lie-group on $lie-algebra
+        property: function
         area: lie algebra
         mathml:
-          - <math><mrow intent='adjoint-action($a1)'><mi>ad</mi><mrow><mo>(</mo><mi arg='a1'>f</mi><mo>)</mo></mrow></mrow></math>
+          - <math><mrow intent="adjoint-action($lie-group,$lie-algebra)"><mpadded lspace="0"><mi>ad</mi></mpadded><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="lie-group">g</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="lie-algebra">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - <math><msub intent='adjoint-action($a1)'><mi>ad</mi><mi arg='a1'>f</mi></msub></math>
         urls:
           - https://en.wikipedia.org/wiki/Adjoint_representation_of_a_Lie_algebra
@@ -506,15 +507,6 @@ concepts:
           - https://mathworld.wolfram.com/ArfInvariant.html
           - https://en.wikipedia.org/wiki/Arf_invariant
           - https://en.wikipedia.org/wiki/Arf_invariant_of_a_knot
-      - concept: argument
-        arity: 1
-        en: argument of $1
-        property: function
-        area: complex analysis
-        mathml:
-          - <math><mrow intent='argument($a1)'><mi>Arg</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
-        urls:
-          - https://en.wikipedia.org/wiki/Argument_(complex_analysis)
       - concept: arithmetic-geometric-mean
         arity: 1
         en: arithmetic geometric mean of $1
@@ -10522,6 +10514,10 @@ concepts:
         alias:
           - kronecker-product-of-graphs
           - categorical-product
+      - concept: test
+        arity: 0
+        mathml:
+          - <math><mpadded lspace="0" intent="test"><mi>test</mi></mpadded></math>
       - concept: therefore-sign
         arity: 1
         en: therefore $1
