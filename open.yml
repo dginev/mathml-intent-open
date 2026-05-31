@@ -55,15 +55,6 @@ concepts:
           - https://en.wikipedia.org/wiki/Ackermann_function
           - https://www.encyclopediaofmath.org/index.php/Ackermann_function
           - https://mathworld.wolfram.com/AckermannFunction.html
-      - concept: ad
-        arity: 1
-        en: a d $1
-        property: postfix. prefix
-        area: calendar units
-        mathml:
-          - <math><mrow intent='ad($a1)'><mi>AD</mi><mo>&#x2009;</mo><mn arg='a1'>2024</mn></mrow></math>
-        urls:
-          - https://en.wikipedia.org/wiki/Anno_Domini
       - concept: additive-inverse
         arity: 1
         en: additive inverse of $1
@@ -408,6 +399,17 @@ concepts:
           - https://mathworld.wolfram.com/Annihilator.html
           - https://en.wikipedia.org/wiki/Annihilator_(ring_theory)
           - https://www.encyclopediaofmath.org/index.php/Annihilator
+      - concept: anno-domini
+        arity: 1
+        en: $year AD
+        property: date prefix postfix
+        area: calendar units
+        mathml:
+          - <math><mrow intent="$op($year)"><mpadded lspace="0" intent="anno-domini" arg="op"><mi>AD</mi></mpadded><mspace width="0.2778em"/><mn arg="year">2026</mn></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Anno_Domini
+        bg: $year след Христа
+        tex: \intent{$op($year)}{\arg{op}{\intent{anno-domini}{\mathrm{AD}}}\;\arg{year}{2026}}
       - concept: annulus
         arity: 1
         en: annulus of $1
