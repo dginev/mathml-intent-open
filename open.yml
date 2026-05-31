@@ -236,9 +236,12 @@ concepts:
         property: symbol
         area: number theory
         mathml:
-          - <math><mi intent='algebraics'>𝔸</mi></math>
+          - <math><mi intent="algebraics">𝔸</mi></math>
         urls:
           - https://mathworld.wolfram.com/Algebraics.html
+        alias:
+          - algebraic-numbers
+        tex: \intent{algebraics}{\mathbb{A}}
       - concept: almost-surely
         arity: 1
         en: almost surely of $1
