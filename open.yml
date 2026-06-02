@@ -144,9 +144,10 @@ concepts:
         property: function
         area: linear algebra
         mathml:
-          - <math><mrow intent='adjugate($a1)'><mi>adj</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
+          - <math><mrow intent="adjugate($arg)"><mpadded lspace="0"><mi>adj</mi></mpadded><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="arg">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Adjugate_matrix
+        tex: \intent{adjugate($arg)}{\mathrm{adj}(\arg{arg}{x})}
       - concept: affine-group
         arity: 1
         en: affine group of $1
