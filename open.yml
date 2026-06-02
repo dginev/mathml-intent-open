@@ -191,7 +191,6 @@ concepts:
           - https://en.wikipedia.org/wiki/Airy_function
           - https://dlmf.nist.gov/9.1
           - https://dlmf.nist.gov/9.2#i
-          - https://dlmf.nist.gov/9.2#i
           - https://ncatlab.org/nlab/show/Airy+function
           - https://www.encyclopediaofmath.org/index.php/Airy_functions
       - concept: albanese-variety
@@ -342,12 +341,13 @@ concepts:
         property: function
         area: special functions
         mathml:
-          - <math><mrow intent='anger-function($a1)'><mi>J</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
+          - <math><mrow intent="anger-function($arg)"><mi>J</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="arg">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://mathworld.wolfram.com/AngerFunction.html
           - https://en.wikipedia.org/wiki/Anger_function
           - https://dlmf.nist.gov/11.10#E1
           - https://www.encyclopediaofmath.org/index.php/Anger_function
+        tex: \intent{anger-function($arg)}{J(\arg{arg}{x})}
       - concept: angle-of-parallelism
         arity: 1
         en: angle of parallelism of $1
@@ -2697,7 +2697,6 @@ concepts:
           - https://en.wikipedia.org/wiki/Spence%27s_function
           - https://dlmf.nist.gov/25.12#E1
           - https://ncatlab.org/nlab/show/dilogarithm
-          - https://ncatlab.org/nlab/show/dilogarithm
         alias:
           - spence-function
       - concept: dimension
@@ -2720,7 +2719,6 @@ concepts:
           - https://en.wikipedia.org/wiki/Scaling_dimension
           - https://ncatlab.org/nlab/show/dimension
           - https://www.encyclopediaofmath.org/index.php/Dimension
-          - https://physics.stackexchange.com/questions/77690/square-bracket-notation-for-dimensions-and-units-usage-and-conventions
           - https://physics.stackexchange.com/questions/77690/square-bracket-notation-for-dimensions-and-units-usage-and-conventions
           - https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values
       - concept: dirac-delta-function
@@ -3295,7 +3293,6 @@ concepts:
         mathml:
           - <math><msub intent='energy-of-signal'><mi>E</mi><mi>s</mi></msub></math>
         urls:
-          - https://en.wikipedia.org/wiki/Energy_(signal_processing)
           - https://en.wikipedia.org/wiki/Energy_(signal_processing)
       - concept: entropy
         arity: 1
@@ -3935,7 +3932,6 @@ concepts:
           - <math><mrow intent='floor($a1)'><mi>floor</mi><mrow><mo>(</mo><mi arg='a1'>X</mi><mo>)</mo></mrow></mrow></math>
         urls:
           - https://youtu.be/RxNs4SwP6lk
-          - https://youtu.be/RxNs4SwP6lk
           - https://drive.google.com/file/d/1T3zc--Fbz0tFHaJq527Y_ZUyAvpOdSuM/view
       - concept: fock-space
         arity: 1
@@ -4107,7 +4103,6 @@ concepts:
           - <math><mrow intent='fredholm-determinant($a1)'><mi>det</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Fredholm_determinant
-          - https://ncatlab.org/nlab/show/Fredholm+determinant
           - https://ncatlab.org/nlab/show/Fredholm+determinant
       - concept: free-algebra
         arity: 2
@@ -4461,12 +4456,6 @@ concepts:
           - https://dlmf.nist.gov/16.2#i
           - https://dlmf.nist.gov/16.2#E1
           - https://dlmf.nist.gov/16.5#p4
-          - https://dlmf.nist.gov/16.2#E1
-          - https://dlmf.nist.gov/16.5#p4
-          - https://dlmf.nist.gov/16.2#E1
-          - https://dlmf.nist.gov/16.5#p4
-          - https://dlmf.nist.gov/16.2#E1
-          - https://dlmf.nist.gov/16.5#p4
       - concept: generalized-mean
         arity: 1
         en: generalized mean of $1
@@ -4709,7 +4698,6 @@ concepts:
           - <math><msup intent='group-of-units($a1)'><mi arg='a1'>X</mi><mo>×</mo></msup></math>
           - <math><mrow intent='group-of-units($a1)'><mi>U</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
         urls:
-          - https://ncatlab.org/nlab/show/group+of+units
           - https://ncatlab.org/nlab/show/group+of+units
       - concept: group-ring
         arity: 2
@@ -6033,8 +6021,6 @@ concepts:
           - https://en.wikipedia.org/wiki/Kelvin_functions
           - https://dlmf.nist.gov/10#PT5
           - https://dlmf.nist.gov/10.61#E1
-          - https://dlmf.nist.gov/10.61#E1
-          - https://dlmf.nist.gov/10.61#E2
           - https://dlmf.nist.gov/10.61#E2
           - https://www.encyclopediaofmath.org/index.php/Kelvin_functions
       - concept: kernel
@@ -6931,11 +6917,7 @@ concepts:
           - https://dlmf.nist.gov/28#PT3
           - https://dlmf.nist.gov/28.2#SS6.p1
           - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
           - https://dlmf.nist.gov/28.12#SS2.p2
-          - https://dlmf.nist.gov/28.2#SS6.p1
           - https://www.encyclopediaofmath.org/index.php/Mathieu_functions
         alias:
           - angular-mathieu-function
@@ -6955,11 +6937,7 @@ concepts:
           - https://dlmf.nist.gov/28#PT3
           - https://dlmf.nist.gov/28.2#SS6.p1
           - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
-          - https://dlmf.nist.gov/28.26#i
           - https://dlmf.nist.gov/28.12#SS2.p2
-          - https://dlmf.nist.gov/28.2#SS6.p1
           - https://www.encyclopediaofmath.org/index.php/Mathieu_functions
         alias:
           - angular-mathieu-function
@@ -7085,7 +7063,6 @@ concepts:
         mathml:
           - <math><mrow intent='meridian-radius-of-curvature($a1)'><mi>M</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
         urls:
-          - https://en.wikipedia.org/wiki/Meridian_arc
           - https://en.wikipedia.org/wiki/Meridian_arc
       - concept: mersenne-number
         arity: 1
@@ -8159,7 +8136,6 @@ concepts:
           - https://mathworld.wolfram.com/Pfaffian.html
           - https://en.wikipedia.org/wiki/Pfaffian
           - https://ncatlab.org/nlab/show/Pfaffian
-          - https://ncatlab.org/nlab/show/Pfaffian
           - https://www.encyclopediaofmath.org/index.php/Pfaffian
       - concept: ph
         arity: 0
@@ -8341,7 +8317,6 @@ concepts:
         urls:
           - https://mathworld.wolfram.com/PolygammaFunction.html
           - https://en.wikipedia.org/wiki/Polygamma_function
-          - https://dlmf.nist.gov/5.15
           - https://dlmf.nist.gov/5.15
       - concept: polylogarithm
         arity: 1
@@ -10539,8 +10514,6 @@ concepts:
         urls:
           - https://mathworld.wolfram.com/ThetaFunction.html
           - https://en.wikipedia.org/wiki/Theta_function
-          - https://dlmf.nist.gov/20.2#i
-          - https://dlmf.nist.gov/20.2#i
           - https://dlmf.nist.gov/20.2#i
           - https://ncatlab.org/nlab/show/theta+function
       - concept: thom-space
