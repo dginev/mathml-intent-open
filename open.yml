@@ -598,11 +598,12 @@ concepts:
         property: unit
         area: imperial units
         mathml:
-          - <math><mrow intent='barrel($a1)'><mi arg='a1'>x</mi><mo>&#x2009;</mo><mi>bbl</mi></mrow></math>
+          - <math><mrow intent="barrel($arg)"><mi arg="arg">x</mi><mspace width="0.2778em"/><mpadded lspace="0"><mi>bbl</mi></mpadded></mrow></math>
         urls:
           - https://mathworld.wolfram.com/Barrel.html
           - https://en.wikipedia.org/wiki/Barrelled_space
           - https://en.wikipedia.org/wiki/Barrel_(unit)
+        tex: \intent{barrel($arg)}{\arg{arg}{x}\;\mathrm{bbl}}
       - concept: bateman-function
         arity: 2
         en: bateman function
