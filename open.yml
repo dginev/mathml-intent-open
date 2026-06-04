@@ -33,17 +33,6 @@ concepts:
           - <math><mrow intent='abundance($a1)'><mi>A</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
         urls:
           - https://mathworld.wolfram.com/Abundance.html
-      - concept: abundancy
-        arity: 1
-        en: abundancy index  of $1
-        property: mixfix
-        area: number theory
-        mathml:
-          - <math><mrow intent='abundancy($a1)'><mi>σ</mi><mrow><mo>(</mo><mi arg='a1'>n</mi><mo>)</mo></mrow><mo>/</mo><mi>n</mi></mrow></math>
-        notation: sigma (n) / n
-        urls:
-          - https://mathworld.wolfram.com/Abundancy.html
-          - https://en.wikipedia.org/wiki/Friendly_number
       - concept: ackermann-function
         arity: 1
         en: ackermann function of $1
@@ -5519,11 +5508,11 @@ concepts:
           - https://en.wikipedia.org/wiki/Index_of_a_subgroup
       - concept: infimum
         arity: 1
-        en: infimum of $1
-        property: function, largeop
+        en: infimum of $arg
+        property: function largeop
         area: order theory
         mathml:
-          - <math><mrow intent='infimum($a1)'><mi>inf</mi><mrow><mi arg='a1'>X</mi></mrow></mrow></math>
+          - <math><mrow intent="infimum($arg)"><mi>inf</mi><mi arg="arg">x</mi></mrow></math>
           - <math><mrow intent='infimum($a1)'><mo>⋀</mo><mi arg='a1'>X</mi></mrow></math>
         urls:
           - https://mathworld.wolfram.com/Infimum.html
@@ -5531,6 +5520,7 @@ concepts:
         alias:
           - meet
           - greatest-lower-bound
+        tex: \intent{infimum($arg)}{\mathrm{inf}\; \arg{arg}x}
       - concept: infimum-limit
         arity: 1
         en: infimum limit of $1
@@ -10495,6 +10485,15 @@ concepts:
         alias:
           - kronecker-product-of-graphs
           - categorical-product
+      - concept: test-function
+        arity: 1
+        property: function anything here
+        area: test
+        mathml:
+          - <math><mrow intent="test-function($arg)"><mi>T</mi><mrow><mo fence="true" form="prefix" stretchy="true">(</mo><mi arg="arg">x</mi><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></mrow></math>
+        urls:
+          - wikipedia.org/en/test-function
+        tex: \MathMLintent{test-function($arg)}{T\left(\arg{arg}{x}\right)}
       - concept: therefore-sign
         arity: 1
         en: therefore $1
