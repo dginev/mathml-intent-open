@@ -10497,6 +10497,9 @@ concepts:
         alias:
           - kronecker-product-of-graphs
           - categorical-product
+      - concept: test
+        arity: 3
+        area: a
       - concept: therefore-sign
         arity: 1
         en: therefore $1
