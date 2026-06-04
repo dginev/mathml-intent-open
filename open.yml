@@ -140,14 +140,14 @@ concepts:
           - mathml: <math><mrow intent='adjoint-representation($a1)'><mi>Ad</mi><mrow><mo>(</mo><mi arg='a1'>x</mi><mo>)</mo></mrow></mrow></math>
       - concept: adjugate
         arity: 1
-        en: adjugate of $1
+        en: adjugate of $arg
         property: function
         area: linear algebra
         urls:
           - https://en.wikipedia.org/wiki/Adjugate_matrix
         notations:
           - tex: \intent{adjugate($arg)}{\mathrm{adj}(\arg{arg}{x})}
-            mathml: <math><mrow intent="adjugate($arg)"><mpadded lspace="0"><mi>adj</mi></mpadded><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="arg">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+            mathml: <math><mrow intent="adjugate($arg)"><mi>adj</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="arg">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
       - concept: affine-group
         arity: 1
         en: affine group of $1
