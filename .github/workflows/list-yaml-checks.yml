@@ -10,6 +10,10 @@ jobs:
   validate-yaml-open-concept-list:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Validate YAML intent lists
         run: yamllint -c _config_yamllint.yml open.yml
+      - name: Install PyYAML
+        run: pip install pyyaml
+      - name: Structural checks (no duplicate concept+arity)
+        run: python3 scripts/validate_open.py open.yml

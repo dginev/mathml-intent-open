@@ -23,9 +23,8 @@ rules:
   indentation:
     level: warning
     indent-sequences: consistent
-  line-length:
-    max: 240
-    level: warning
-    allow-non-breakable-inline-mappings: true
+  # The canonical serializer intentionally emits unwrapped lines (lineWidth: 0) so editing one entry
+  # never rewraps a neighbour — long mathml/url lines are by design, not lint-worthy.
+  line-length: disable
   truthy: disable
   trailing-spaces: disable
