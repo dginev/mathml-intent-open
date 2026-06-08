@@ -21,6 +21,12 @@ old, messy draft. Fix names, arities, speech, args, and notations. Each entry ne
    otherwise MathWorld / DLMF / nLab / Encyclopedia of Math. Link it in `links`; verify the page truly
    covers the concept (not merely that the URL resolves), and never invent a URL.
 
+Before adding, check for a **semantic duplicate** — exact-name screening is not enough. Run
+`scripts/catalog/dupscan.py` (concepts sharing a notation signature are suspects; most are legitimate
+symbol overloads, but some are the same concept under another name, e.g. `lie-bracket` = `commutator`,
+`d-alembertian` = `dalembert-operator`). **If the concept already exists under another name, do NOT add
+a new entry — add the new name to the existing entry's `alias` list instead.**
+
 ## Per-entry decision
 
 For every entry, choose an `action`:
