@@ -1611,6 +1611,16 @@ concepts:
         notations:
           - tex: \Gamma^{\arg{k}{k}}_{\arg{i}{i}\arg{j}{j}}
             mathml: <math><msubsup intent="christoffel-symbol-of-second-kind($i,$j,$k)"><mi mathvariant="normal">Γ</mi><mrow><mi arg="i">i</mi><mi arg="j">j</mi></mrow><mi arg="k">k</mi></msubsup></math>
+      - concept: chromatic-number
+        arity: 1
+        en: chromatic number of $graph
+        property: function
+        area: graph theory
+        notations:
+          - tex: \chi(\arg{graph}{G})
+            mathml: <math><mrow intent="chromatic-number($graph)"><mi>χ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="graph">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Graph_coloring
       - concept: chromatic-polynomial
         arity: 1
         en: chromatic polynomial of $graph
@@ -1858,6 +1868,8 @@ concepts:
         notations:
           - tex: "[\\arg{a}{a},\\arg{b}{b}]"
             mathml: <math><mrow intent="commutator($a,$b)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+        alias:
+          - lie-bracket
       - concept: commutator-subgroup
         arity: 1
         en: commutator subgroup of $group
@@ -2299,6 +2311,20 @@ concepts:
             mathml: <math><msup intent="converse-graph($value)"><mi arg="value">G</mi><mi>R</mi></msup></math>
           - tex: \arg{value}{G}'
             mathml: <math><msup intent="converse-graph($value)"><mi arg="value">G</mi><mo lspace="0em" rspace="0em">′</mo></msup></math>
+      - concept: convex-conjugate
+        arity: 1
+        en: convex conjugate of $function
+        property: postfix
+        area: convex analysis
+        notations:
+          - tex: \arg{function}{f}^{*}
+            mathml: <math><msup intent="convex-conjugate($function)"><mi arg="function">f</mi><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">∗</mo></msup></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Convex_conjugate
+        alias:
+          - legendre-transform
+          - fenchel-conjugate
+          - fenchel-transform
       - concept: convolution
         arity: 2
         en: $x convolved with $y
@@ -2631,6 +2657,7 @@ concepts:
           - dalembertian
           - wave-operator
           - box-operator
+          - d-alembertian
         notations:
           - tex: \Box\,\arg{function}{u}
             mathml: <math><mrow intent="dalembert-operator($function)"><mi>□</mi><mi arg="function">u</mi></mrow></math>
@@ -5035,6 +5062,16 @@ concepts:
         notations:
           - tex: "[\\arg{value}{f}]_{\\arg{point}{x}}"
             mathml: <math><msub intent="germ($value,$point)"><mrow><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="value">f</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow><mi arg="point">x</mi></msub></math>
+      - concept: girth
+        arity: 1
+        en: girth of $graph
+        property: function
+        area: graph theory
+        notations:
+          - tex: g(\arg{graph}{G})
+            mathml: <math><mrow intent="girth($graph)"><mi>g</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="graph">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Girth_(graph_theory)
       - concept: glaisher-constant
         arity: 0
         en: glaisher constant
@@ -6120,6 +6157,16 @@ concepts:
             mathml: <math><mrow intent="increase-tends-to($value,$limit)"><mi arg="value">x</mi><mo stretchy="false">↗</mo><mi arg="limit">a</mi></mrow></math>
         alias:
           - increases-to
+      - concept: independence-number
+        arity: 1
+        en: independence number of $graph
+        property: function
+        area: graph theory
+        notations:
+          - tex: \alpha(\arg{graph}{G})
+            mathml: <math><mrow intent="independence-number($graph)"><mi>α</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="graph">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Independent_set_(graph_theory)
       - concept: independent
         arity: 2
         en: $x is independent of $y
@@ -7686,6 +7733,16 @@ concepts:
         notations:
           - tex: P_{\lambda}(\arg{value}{x}; t, q)
             mathml: <math><mrow intent="macdonald-polynomial($value)"><msub><mi>P</mi><mi>λ</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo separator="true">;</mo><mi>t</mi><mo separator="true">,</mo><mi>q</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: mahalanobis-distance
+        arity: 2
+        en: mahalanobis distance between $a and $b
+        property: function
+        area: statistics
+        notations:
+          - tex: d_{\mathrm{M}}(\arg{a}{x}, \arg{b}{y})
+            mathml: <math><mrow intent="mahalanobis-distance($a,$b)"><msub><mi>d</mi><mi mathvariant="normal">M</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">x</mi><mo separator="true">,</mo><mi arg="b">y</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Mahalanobis_distance
       - concept: mahler-measure
         arity: 1
         en: mahler measure of $value
@@ -10055,6 +10112,16 @@ concepts:
         notations:
           - tex: H_{\arg{degree}{n}}(\arg{space}{X}, \arg{subspace}{A})
             mathml: <math><mrow intent="relative-homology($degree,$space,$subspace)"><msub><mi>H</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="space">X</mi><mo separator="true">,</mo><mi arg="subspace">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: renyi-entropy
+        arity: 2
+        en: renyi entropy of order $order of $variable
+        property: function
+        area: information theory
+        notations:
+          - tex: H_{\arg{order}{\alpha}}(\arg{variable}{X})
+            mathml: <math><mrow intent="renyi-entropy($order,$variable)"><msub><mi>H</mi><mi arg="order">α</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="variable">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/R%C3%A9nyi_entropy
       - concept: repunit
         arity: 1
         en: repunit of order $number
@@ -12111,6 +12178,16 @@ concepts:
             mathml: <math><mi intent="turn">rev</mi></math>
           - tex: \intent{turn}{\mathrm{cyc}}
             mathml: <math><mi intent="turn">cyc</mi></math>
+      - concept: tutte-polynomial
+        arity: 3
+        en: tutte polynomial of $graph at $x and $y
+        property: function
+        area: graph theory
+        notations:
+          - tex: T_{\arg{graph}{G}}(\arg{x}{x}, \arg{y}{y})
+            mathml: <math><mrow intent="tutte-polynomial($graph,$x,$y)"><msub><mi>T</mi><mi arg="graph">G</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="x">x</mi><mo separator="true">,</mo><mi arg="y">y</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Tutte_polynomial
       - concept: twisted-tensor-product
         arity: 2
         en: $left twisted tensor product $right
@@ -12722,6 +12799,16 @@ concepts:
         notations:
           - tex: \intent{wiener-algebra}{A(\mathbb{T})}
             mathml: <math><mrow intent="wiener-algebra"><mi>A</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>𝕋</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: wiener-index
+        arity: 1
+        en: wiener index of $graph
+        property: function
+        area: graph theory
+        notations:
+          - tex: W(\arg{graph}{G})
+            mathml: <math><mrow intent="wiener-index($graph)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="graph">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Wiener_index
       - concept: wiener-process
         arity: 1
         en: wiener process indexed by $index

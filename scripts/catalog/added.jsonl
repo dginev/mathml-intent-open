@@ -1,10 +1,20 @@
-{"slug": "barnes-g-function", "page": "https://en.wikipedia.org/wiki/Barnes_G-function", "batch": 1, "date": "2026-06-08"}
-{"slug": "dirac-adjoint", "page": "https://en.wikipedia.org/wiki/Dirac_adjoint", "batch": 1, "date": "2026-06-08"}
-{"slug": "dirichlet-beta-function", "page": "https://en.wikipedia.org/wiki/Dirichlet_beta_function", "batch": 1, "date": "2026-06-08"}
-{"slug": "hyperfactorial", "page": "https://en.wikipedia.org/wiki/Hyperfactorial", "batch": 1, "date": "2026-06-08"}
-{"slug": "k-function", "page": "https://en.wikipedia.org/wiki/K-function", "batch": 1, "date": "2026-06-08"}
-{"slug": "lerch-transcendent", "page": "https://en.wikipedia.org/wiki/Lerch_transcendent", "batch": 1, "date": "2026-06-08"}
-{"slug": "meixner-polynomial", "page": "https://en.wikipedia.org/wiki/Meixner_polynomials", "batch": 1, "date": "2026-06-08"}
-{"slug": "nearest-integer-function", "page": "https://en.wikipedia.org/wiki/Nearest_integer_function", "batch": 1, "date": "2026-06-08"}
-{"slug": "superfactorial", "page": "https://en.wikipedia.org/wiki/Superfactorial", "batch": 1, "date": "2026-06-08"}
-{"slug": "tetration", "page": "https://en.wikipedia.org/wiki/Tetration", "batch": 1, "date": "2026-06-08"}
+{"slug": "barnes-g-function", "page": "https://en.wikipedia.org/wiki/Barnes_G-function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "dirac-adjoint", "page": "https://en.wikipedia.org/wiki/Dirac_adjoint", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "dirichlet-beta-function", "page": "https://en.wikipedia.org/wiki/Dirichlet_beta_function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "hyperfactorial", "page": "https://en.wikipedia.org/wiki/Hyperfactorial", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "k-function", "page": "https://en.wikipedia.org/wiki/K-function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "lerch-transcendent", "page": "https://en.wikipedia.org/wiki/Lerch_transcendent", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "meixner-polynomial", "page": "https://en.wikipedia.org/wiki/Meixner_polynomials", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "nearest-integer-function", "page": "https://en.wikipedia.org/wiki/Nearest_integer_function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "superfactorial", "page": "https://en.wikipedia.org/wiki/Superfactorial", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "tetration", "page": "https://en.wikipedia.org/wiki/Tetration", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "chromatic-number", "page": "https://en.wikipedia.org/wiki/Graph_coloring", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "convex-conjugate", "page": "https://en.wikipedia.org/wiki/Convex_conjugate", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "girth", "page": "https://en.wikipedia.org/wiki/Girth_(graph_theory)", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "independence-number", "page": "https://en.wikipedia.org/wiki/Independent_set_(graph_theory)", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "mahalanobis-distance", "page": "https://en.wikipedia.org/wiki/Mahalanobis_distance", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "renyi-entropy", "page": "https://en.wikipedia.org/wiki/R%C3%A9nyi_entropy", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "tutte-polynomial", "page": "https://en.wikipedia.org/wiki/Tutte_polynomial", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "wiener-index", "page": "https://en.wikipedia.org/wiki/Wiener_index", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "lie-bracket", "batch": 2, "date": "2026-06-08", "status": "alias-of:commutator"}
+{"slug": "d-alembertian", "batch": 2, "date": "2026-06-08", "status": "alias-of:dalembert-operator"}
