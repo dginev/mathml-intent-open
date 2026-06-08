@@ -620,6 +620,26 @@ concepts:
             mathml: <math><mrow intent="arithmetic-geometric-mean($x,$y)"><mi>AGM</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="x">x</mi><mo separator="true">,</mo><mi arg="y">y</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         alias:
           - agm
+      - concept: arithmetic-zeta-function
+        arity: 2
+        en: arithmetic zeta function of $scheme at $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta_{\arg{scheme}{X}}(\arg{value}{s})
+            mathml: <math><mrow intent="arithmetic-zeta-function($scheme,$value)"><msub><mi>ζ</mi><mi arg="scheme">X</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Arithmetic_zeta_function
+      - concept: artin-l-function
+        arity: 2
+        en: artin l function of $value and $representation
+        property: function
+        area: number theory
+        notations:
+          - tex: L(\arg{value}{s}, \arg{representation}{\rho})
+            mathml: <math><mrow intent="artin-l-function($value,$representation)"><mi>L</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo separator="true">,</mo><mi arg="representation">ρ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Artin_L-function
       - concept: associated-legendre-polynomial
         arity: 3
         en: associated legendre polynomial of degree $degree and order $order evaluated at $value
@@ -697,6 +717,16 @@ concepts:
           - https://en.wikipedia.org/wiki/Barnes_G-function
         alias:
           - barnes-g
+      - concept: barnes-zeta-function
+        arity: 2
+        en: barnes zeta function of $value and $shift
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta(\arg{value}{s}, \arg{shift}{w})
+            mathml: <math><mrow intent="barnes-zeta-function($value,$shift)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo separator="true">,</mo><mi arg="shift">w</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Barnes_zeta_function
       - concept: barrel
         arity: 1
         en: $number barrels
@@ -833,6 +863,16 @@ concepts:
         notations:
           - tex: B_{\arg{number}{n}}(\arg{value}{x})
             mathml: <math><mrow intent="bernoulli-polynomial($number,$value)"><msub><mi>B</mi><mi arg="number">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: bessel-clifford-function
+        arity: 2
+        en: bessel clifford function of order $order at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \mathcal{C}_{\arg{order}{n}}(\arg{value}{z})
+            mathml: <math><mrow intent="bessel-clifford-function($order,$value)"><msub><mi>𝒞</mi><mi arg="order">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Bessel%E2%80%93Clifford_function
       - concept: bessel-function
         arity: 2
         en: bessel function of order $order at $value
@@ -1185,6 +1225,18 @@ concepts:
         notations:
           - tex: \mathrm{Br}(\arg{field}{k})
             mathml: <math><mrow intent="brauer-group($field)"><mi>Br</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="field">k</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: bring-radical
+        arity: 1
+        en: bring radical of $value
+        property: function
+        area: algebra
+        notations:
+          - tex: \operatorname{BR}(\arg{value}{x})
+            mathml: <math><mrow intent="bring-radical($value)"><mi>BR</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Bring_radical
+        alias:
+          - ultraradical
       - concept: brun-constant
         arity: 0
         en: brun constant
@@ -2572,6 +2624,16 @@ concepts:
         notations:
           - tex: \mathrm{Ci}(\arg{value}{x})
             mathml: <math><mrow intent="cosine-integral($value)"><mi>Ci</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: coulomb-wave-function
+        arity: 3
+        en: coulomb wave function of order $order with $eta at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: F_{\arg{order}{\ell}}(\arg{eta}{\eta}, \arg{value}{\rho})
+            mathml: <math><mrow intent="coulomb-wave-function($order,$eta,$value)"><msub><mi>F</mi><mi arg="order">ℓ</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="eta">η</mi><mo separator="true">,</mo><mi arg="value">ρ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Coulomb_wave_function
       - concept: coupling-constant
         arity: 0
         en: coupling constant
@@ -3446,6 +3508,18 @@ concepts:
         notations:
           - tex: L(\arg{value}{s}, \arg{character}{\chi})
             mathml: <math><mrow intent="dirichlet-l-function($value,$character)"><mi>L</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo separator="true">,</mo><mi arg="character">χ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: discrete-chebyshev-polynomial
+        arity: 2
+        en: discrete chebyshev polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: t_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="discrete-chebyshev-polynomial($degree,$value)"><msub><mi>t</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Discrete_Chebyshev_polynomials
+        alias:
+          - gram-polynomial
       - concept: discrete-valuation
         arity: 1
         en: discrete valuation of $value
@@ -3696,6 +3770,16 @@ concepts:
         notations:
           - tex: \arg{value}{E}^{*}
             mathml: <math><msup intent="dual-bundle($value)"><mi arg="value">E</mi><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">∗</mo></msup></math>
+      - concept: dual-hahn-polynomial
+        arity: 2
+        en: dual hahn polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: R_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="dual-hahn-polynomial($degree,$value)"><msub><mi>R</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dual_Hahn_polynomials
       - concept: dual-space
         arity: 1
         en: dual space of $space
@@ -5368,6 +5452,16 @@ concepts:
             mathml: <math><mi intent="golden-ratio">φ</mi></math>
           - tex: \intent{golden-ratio}{\phi}
             mathml: <math><mi intent="golden-ratio">ϕ</mi></math>
+      - concept: goss-zeta-function
+        arity: 1
+        en: goss zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta(\arg{value}{s})
+            mathml: <math><mrow intent="goss-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Goss_zeta_function
       - concept: graham-number
         arity: 0
         en: graham number
@@ -5636,6 +5730,16 @@ concepts:
         notations:
           - tex: H(\arg{value}{x})
             mathml: <math><mrow intent="harmonic-mean($value)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: hasse-weil-zeta-function
+        arity: 2
+        en: hasse weil zeta function of $variety at $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta_{\arg{variety}{X}}(\arg{value}{s})
+            mathml: <math><mrow intent="hasse-weil-zeta-function($variety,$value)"><msub><mi>ζ</mi><mi arg="variety">X</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hasse%E2%80%93Weil_zeta_function
       - concept: hausdorff-measure
         arity: 1
         en: $dimension dimensional hausdorff measure
@@ -6274,6 +6378,26 @@ concepts:
             mathml: <math><mi intent="identity-matrix">I</mi></math>
           - tex: \intent{identity-matrix}{I_n}
             mathml: <math><msub intent="identity-matrix"><mi>I</mi><mi>n</mi></msub></math>
+      - concept: igusa-zeta-function
+        arity: 1
+        en: igusa zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: Z(\arg{value}{s})
+            mathml: <math><mrow intent="igusa-zeta-function($value)"><mi>Z</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Igusa_zeta_function
+      - concept: ihara-zeta-function
+        arity: 2
+        en: ihara zeta function of $graph at $value
+        property: function
+        area: graph theory
+        notations:
+          - tex: \zeta_{\arg{graph}{G}}(\arg{value}{u})
+            mathml: <math><mrow intent="ihara-zeta-function($graph,$value)"><msub><mi>ζ</mi><mi arg="graph">G</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">u</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Ihara_zeta_function
       - concept: image
         arity: 1
         en: image of $function
@@ -7547,6 +7671,16 @@ concepts:
         notations:
           - tex: \intent{leech-lattice}{\Lambda_{24}}
             mathml: <math><msub intent="leech-lattice"><mi mathvariant="normal">Λ</mi><mn>24</mn></msub></math>
+      - concept: lefschetz-zeta-function
+        arity: 1
+        en: lefschetz zeta function of $value
+        property: function
+        area: dynamical systems
+        notations:
+          - tex: \zeta(\arg{value}{t})
+            mathml: <math><mrow intent="lefschetz-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">t</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lefschetz_zeta_function
       - concept: left-adjoint
         arity: 2
         en: $x is left adjoint to $y
@@ -10223,6 +10357,16 @@ concepts:
             mathml: <math><mrow intent="q-gamma-function($base,$value)"><msub><mi mathvariant="normal">Γ</mi><mi arg="base">q</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Q-gamma_function
+      - concept: q-laguerre-polynomial
+        arity: 2
+        en: q laguerre polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: L_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="q-laguerre-polynomial($degree,$value)"><msub><mi>L</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Q-Laguerre_polynomials
       - concept: q-pochhammer-symbol
         arity: 3
         en: q-pochhammer symbol of $a with base $q and order $n
@@ -11006,6 +11150,16 @@ concepts:
         notations:
           - tex: \arg{x}{X} \leftarrow \arg{y}{Y} \rightarrow \arg{z}{Z}
             mathml: <math><mrow intent="roof($x,$y,$z)"><mi arg="x">X</mi><mo stretchy="false">←</mo><mi arg="y">Y</mi><mo stretchy="false">→</mo><mi arg="z">Z</mi></mrow></math>
+      - concept: rook-polynomial
+        arity: 2
+        en: rook polynomial of board $board in $value
+        property: function
+        area: combinatorics
+        notations:
+          - tex: R_{\arg{board}{B}}(\arg{value}{x})
+            mathml: <math><mrow intent="rook-polynomial($board,$value)"><msub><mi>R</mi><mi arg="board">B</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Rook_polynomial
       - concept: root-mean-square
         arity: 1
         en: root mean square of $value
@@ -11190,6 +11344,16 @@ concepts:
         notations:
           - tex: M(\arg{group}{G})
             mathml: <math><mrow intent="schur-multiplier($group)"><mi>M</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="group">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: schur-polynomial
+        arity: 2
+        en: schur polynomial of partition $partition in $variables
+        property: function
+        area: algebraic combinatorics
+        notations:
+          - tex: s_{\arg{partition}{\lambda}}(\arg{variables}{x})
+            mathml: <math><mrow intent="schur-polynomial($partition,$variables)"><msub><mi>s</mi><mi arg="partition">λ</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="variables">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Schur_polynomial
       - concept: schwartz-space
         arity: 0
         en: Schwartz space
@@ -11575,6 +11739,18 @@ concepts:
         notations:
           - tex: \intent{solid-angle}{\Omega}
             mathml: <math><mi mathvariant="normal" intent="solid-angle">Ω</mi></math>
+      - concept: solid-harmonics
+        arity: 3
+        en: solid harmonic of degree $degree and order $order at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: R_{\arg{degree}{\ell}}^{\arg{order}{m}}(\arg{value}{\mathbf{r}})
+            mathml: <math><mrow intent="solid-harmonics($degree,$order,$value)"><msubsup><mi>R</mi><mi arg="degree">ℓ</mi><mi arg="order">m</mi></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">𝐫</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Solid_harmonics
+        alias:
+          - solid-harmonic
       - concept: span
         arity: 1
         en: $value span
@@ -11729,6 +11905,18 @@ concepts:
         notations:
           - tex: (\arg{radius}{r}, \arg{theta}{\theta}, \arg{phi}{\varphi})
             mathml: <math><mrow intent="spherical-coordinate($radius,$theta,$phi)"><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="radius">r</mi><mo separator="true">,</mo><mi arg="theta">θ</mi><mo separator="true">,</mo><mi arg="phi">φ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></math>
+      - concept: spherical-harmonics
+        arity: 4
+        en: spherical harmonic of degree $degree and order $order at $polar and $azimuth
+        property: function
+        area: special functions
+        notations:
+          - tex: Y_{\arg{degree}{\ell}}^{\arg{order}{m}}(\arg{polar}{\theta}, \arg{azimuth}{\phi})
+            mathml: <math><mrow intent="spherical-harmonics($degree,$order,$polar,$azimuth)"><msubsup><mi>Y</mi><mi arg="degree">ℓ</mi><mi arg="order">m</mi></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="polar">θ</mi><mo separator="true">,</mo><mi arg="azimuth">ϕ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Spherical_harmonics
+        alias:
+          - spherical-harmonic
       - concept: spin-angular-momentum
         arity: 0
         en: spin angular momentum
