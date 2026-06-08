@@ -663,6 +663,18 @@ concepts:
             mathml: <math><msup intent="baire-space"><mi>ℕ</mi><mi>ℕ</mi></msup></math>
           - tex: \intent{baire-space}{\omega^{\omega}}
             mathml: <math><msup intent="baire-space"><mi>ω</mi><mi>ω</mi></msup></math>
+      - concept: barnes-g-function
+        arity: 1
+        en: barnes g function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: G(\arg{value}{z})
+            mathml: <math><mrow intent="barnes-g-function($value)"><mi>G</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Barnes_G-function
+        alias:
+          - barnes-g
       - concept: barrel
         arity: 1
         en: $number barrels
@@ -3017,6 +3029,17 @@ concepts:
             mathml: <math><mrow intent="dimension($space)"><mrow><mi>dim</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="space">V</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: "[\\arg{space}{x}]"
             mathml: <math><mrow intent="dimension($space)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="space">x</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+      - concept: dirac-adjoint
+        arity: 1
+        en: dirac adjoint of $spinor
+        area: quantum field theory
+        notations:
+          - tex: \bar{\arg{spinor}{\psi}}
+            mathml: <math><mover intent="dirac-adjoint($spinor)"><mi arg="spinor">ψ</mi><mo stretchy="false">‾</mo></mover></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dirac_adjoint
+        alias:
+          - dirac-conjugate
       - concept: dirac-delta-function
         arity: 1
         en: dirac delta function of $value
@@ -3115,6 +3138,16 @@ concepts:
             mathml: <math><mrow intent="directional-derivative($vector,$function)"><msub><mi>D</mi><mi arg="vector">v</mi></msub><mi arg="function">f</mi></mrow></math>
           - tex: \arg{vector}{v} \cdot \nabla \arg{function}{f}
             mathml: <math><mrow intent="directional-derivative($vector,$function)"><mi arg="vector">v</mi><mo>⋅</mo><mo form="prefix" stretchy="false">∇</mo><mi arg="function">f</mi></mrow></math>
+      - concept: dirichlet-beta-function
+        arity: 1
+        en: dirichlet beta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \beta(\arg{value}{s})
+            mathml: <math><mrow intent="dirichlet-beta-function($value)"><mi>β</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dirichlet_beta_function
       - concept: dirichlet-character
         arity: 1
         en: dirichlet character of $value
@@ -5831,6 +5864,16 @@ concepts:
             mathml: <math><mrow intent="hyperdeterminant($matrix)"><mrow><mi>det</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="matrix">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \lvert\arg{matrix}{A}\rvert
             mathml: <math><mrow intent="hyperdeterminant($matrix)"><mo fence="true" form="prefix" stretchy="false">|</mo><mi arg="matrix">A</mi><mo fence="true" form="postfix" stretchy="false">|</mo></mrow></math>
+      - concept: hyperfactorial
+        arity: 1
+        en: hyperfactorial of $number
+        property: function
+        area: number theory
+        notations:
+          - tex: H(\arg{number}{n})
+            mathml: <math><mrow intent="hyperfactorial($number)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hyperfactorial
       - concept: hypertorus
         arity: 1
         en: hypertorus of dimension $dimension
@@ -6638,6 +6681,18 @@ concepts:
         notations:
           - tex: J(\arg{function}{f})
             mathml: <math><mrow intent="julia-set($function)"><mi>J</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: k-function
+        arity: 1
+        en: k function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: K(\arg{value}{z})
+            mathml: <math><mrow intent="k-function($value)"><mi>K</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/K-function
+        alias:
+          - kinkelin-function
       - concept: kaprekar-constant
         arity: 0
         en: kaprekar constant
@@ -7248,6 +7303,18 @@ concepts:
         notations:
           - tex: U_{\arg{number}{n}}
             mathml: <math><msub intent="lehmer-number($number)"><mi>U</mi><mi arg="number">n</mi></msub></math>
+      - concept: lerch-transcendent
+        arity: 3
+        en: lerch transcendent of $z, $s and $a
+        property: function
+        area: special functions
+        notations:
+          - tex: \Phi(\arg{z}{z}, \arg{s}{s}, \arg{a}{a})
+            mathml: <math><mrow intent="lerch-transcendent($z,$s,$a)"><mi mathvariant="normal">Φ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="z">z</mi><mo separator="true">,</mo><mi arg="s">s</mi><mo separator="true">,</mo><mi arg="a">a</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lerch_transcendent
+        alias:
+          - lerch-zeta-function
       - concept: level
         arity: 1
         en: level of $value
@@ -7835,6 +7902,16 @@ concepts:
         notations:
           - tex: P_n^{(\lambda)}(\arg{value}{x}; \phi)
             mathml: <math><mrow intent="meixner-pollaczek-polynomial($value)"><msubsup><mi>P</mi><mi>n</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>λ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo separator="true">;</mo><mi>ϕ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: meixner-polynomial
+        arity: 2
+        en: meixner polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: M_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="meixner-polynomial($degree,$value)"><msub><mi>M</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Meixner_polynomials
       - concept: mellin-transform
         arity: 1
         en: mellin transform of $function
@@ -8400,6 +8477,19 @@ concepts:
         notations:
           - tex: \int \arg{function}{f}
             mathml: <math><mrow intent="narrow-denjoy-integral($function)"><mo movablelimits="false">∫</mo><mi arg="function">f</mi></mrow></math>
+      - concept: nearest-integer-function
+        arity: 1
+        en: nearest integer to $value
+        property: fenced
+        area: number theory
+        notations:
+          - tex: \lfloor \arg{value}{x} \rceil
+            mathml: <math><mrow intent="nearest-integer-function($value)"><mo form="prefix" stretchy="false">⌊</mo><mi arg="value">x</mi><mo form="postfix" stretchy="false">⌉</mo></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Nearest_integer_function
+        alias:
+          - round
+          - nint
       - concept: negative-binomial-distribution
         arity: 0
         en: negative binomial distribution
@@ -11297,6 +11387,16 @@ concepts:
         notations:
           - tex: \arg{x}{A}+\arg{y}{B}
             mathml: <math><mrow intent="sumset($x,$y)"><mi arg="x">A</mi><mo>+</mo><mi arg="y">B</mi></mrow></math>
+      - concept: superfactorial
+        arity: 1
+        en: superfactorial of $number
+        property: function
+        area: number theory
+        notations:
+          - tex: \mathrm{sf}(\arg{number}{n})
+            mathml: <math><mrow intent="superfactorial($number)"><mi>sf</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Superfactorial
       - concept: superfluous-submodule
         arity: 2
         en: $submodule is a superfluous submodule of $module
@@ -11644,6 +11744,17 @@ concepts:
         notations:
           - tex: \arg{x}{G}\times\arg{y}{H}
             mathml: <math><mrow intent="tensor-product-of-graphs($x,$y)"><mi arg="x">G</mi><mo>×</mo><mi arg="y">H</mi></mrow></math>
+      - concept: tetration
+        arity: 2
+        en: tetration of $base to height $height
+        area: arithmetic
+        notations:
+          - tex: "{}^{\\arg{height}{n}}\\arg{base}{a}"
+            mathml: <math><mrow intent="tetration($height,$base)"><msup><mrow/><mi arg="height">n</mi></msup><mi arg="base">a</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Tetration
+        alias:
+          - hyperpower
       - concept: therefore-sign
         arity: 1
         en: therefore $value
