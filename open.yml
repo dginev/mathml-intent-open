@@ -471,6 +471,16 @@ concepts:
         notations:
           - tex: \mathrm{ann}(\arg{point}{x})
             mathml: <math><mrow intent="annulus($point)"><mi>ann</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="point">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: anticommutator
+        arity: 2
+        en: anticommutator of $a and $b
+        property: fenced
+        area: ring theory
+        notations:
+          - tex: \{\arg{a}{A}, \arg{b}{B}\}
+            mathml: <math><mrow intent="anticommutator($a,$b)"><mo fence="true" form="prefix" stretchy="false">{</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo fence="true" form="postfix" stretchy="false">}</mo></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Commutator
       - concept: antiparticle
         arity: 1
         en: antiparticle of $particle
@@ -5538,6 +5548,16 @@ concepts:
         notations:
           - tex: (\arg{a}{a},\arg{b}{b})
             mathml: <math><mrow intent="hilbert-symbol($a,$b)"><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></math>
+      - concept: hilbert-transform
+        arity: 1
+        en: hilbert transform of $function
+        property: function
+        area: harmonic analysis
+        notations:
+          - tex: \mathcal{H}\{\arg{function}{f}\}
+            mathml: <math><mrow intent="hilbert-transform($function)"><mi>ℋ</mi><mrow><mo fence="true" form="prefix" stretchy="false">{</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">}</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hilbert_transform
       - concept: hit-or-miss-transform
         arity: 2
         en: hit or miss transform of $image by $element
@@ -6949,6 +6969,17 @@ concepts:
         notations:
           - tex: L_{\arg{degree}{n}}(\arg{value}{x})
             mathml: <math><mrow intent="laguerre-polynomial($degree,$value)"><msub><mi>L</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: lambert-w-function
+        arity: 1
+        en: lambert w function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: W(\arg{value}{x})
+            mathml: <math><mrow intent="lambert-w-function($value)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lambert_W_function
+          - https://dlmf.nist.gov/4.13
       - concept: landau-constant
         arity: 0
         en: landau constant
@@ -7682,6 +7713,18 @@ concepts:
             mathml: <math><mrow intent="matrix($table)"><mo fence="true" form="prefix" stretchy="true">(</mo><mtable arg="table"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></math>
           - tex: \left[\arg{table}{\begin{matrix} a & b \\ c & d \end{matrix}}\right]
             mathml: <math><mrow intent="matrix($table)"><mo fence="true" form="prefix" stretchy="true">[</mo><mtable arg="table"><mtr><mtd><mi>a</mi></mtd><mtd><mi>b</mi></mtd></mtr><mtr><mtd><mi>c</mi></mtd><mtd><mi>d</mi></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true">]</mo></mrow></math>
+      - concept: matrix-exponential
+        arity: 1
+        en: matrix exponential of $matrix
+        property: function
+        area: linear algebra
+        notations:
+          - tex: e^{\arg{matrix}{A}}
+            mathml: <math><msup intent="matrix-exponential($matrix)"><mi>e</mi><mi arg="matrix">A</mi></msup></math>
+          - tex: \exp(\arg{matrix}{A})
+            mathml: <math><mrow intent="matrix-exponential($matrix)"><mrow><mi>exp</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="matrix">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Matrix_exponential
       - concept: matrix-ring
         arity: 2
         en: ring of $number by $number matrices over $ring
@@ -9493,6 +9536,19 @@ concepts:
         alias:
           - q-binomial
           - gaussian-binomial-coefficient
+      - concept: q-pochhammer-symbol
+        arity: 3
+        en: q-pochhammer symbol of $a with base $q and order $n
+        property: fenced
+        area: q-analysis
+        notations:
+          - tex: "{(\\arg{a}{a}; \\arg{q}{q})}_{\\arg{n}{n}}"
+            mathml: <math><msub intent="q-pochhammer-symbol($a,$q,$n)"><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">;</mo><mi arg="q">q</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mi arg="n">n</mi></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Q-Pochhammer_symbol
+          - https://dlmf.nist.gov/17.2
+        alias:
+          - q-shifted-factorial
       - concept: qed
         arity: 0
         en: q.e.d.
