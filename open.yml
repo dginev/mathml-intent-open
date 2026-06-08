@@ -255,6 +255,16 @@ concepts:
         notations:
           - tex: \intent{aleph}{\aleph}
             mathml: <math><mi intent="aleph">ℵ</mi></math>
+      - concept: alexander-polynomial
+        arity: 1
+        en: alexander polynomial of $value
+        property: function
+        area: knot theory
+        notations:
+          - tex: \Delta(\arg{value}{t})
+            mathml: <math><mrow intent="alexander-polynomial($value)"><mi mathvariant="normal">Δ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">t</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Alexander_polynomial
       - concept: algebraic-closure
         arity: 1
         en: algebraic closure of $field
@@ -1660,6 +1670,8 @@ concepts:
         notations:
           - tex: \mathrm{Cl}_2(\arg{angle}{\varphi})
             mathml: <math><mrow intent="clausen-function($angle)"><msub><mi>Cl</mi><mn>2</mn></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="angle">φ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        alias:
+          - clausen-integral
       - concept: clebsch-gordan-coefficient
         arity: 6
         en: clebsch-gordan coefficient for $jone, $jtwo, $mone, $mtwo, $j, $m
@@ -2362,6 +2374,18 @@ concepts:
             mathml: <math><msub intent="conway-group"><mi>Co</mi><mn>3</mn></msub></math>
         alias:
           - Co
+      - concept: conway-polynomial
+        arity: 1
+        en: conway polynomial of $value
+        property: function
+        area: knot theory
+        notations:
+          - tex: \nabla(\arg{value}{z})
+            mathml: <math><mrow intent="conway-polynomial($value)"><mo form="prefix" stretchy="false">∇</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Alexander_polynomial
+        alias:
+          - alexander-conway-polynomial
       - concept: coprime
         arity: 2
         en: $m coprime to $n
@@ -2743,6 +2767,16 @@ concepts:
         notations:
           - tex: \eta(\arg{value}{\tau})
             mathml: <math><mrow intent="dedekind-eta-function($value)"><mi>η</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">τ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: dedekind-sum
+        arity: 2
+        en: dedekind sum of $a and $b
+        property: function
+        area: number theory
+        notations:
+          - tex: s(\arg{a}{h}, \arg{b}{k})
+            mathml: <math><mrow intent="dedekind-sum($a,$b)"><mi>s</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">h</mi><mo separator="true">,</mo><mi arg="b">k</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dedekind_sum
       - concept: dedekind-zeta-function
         arity: 2
         en: dedekind zeta function of $field at $value
@@ -2833,6 +2867,16 @@ concepts:
             mathml: <math><mrow intent="degree-of-polynomial($polynomial)"><mrow><mi>deg</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="polynomial">p</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \deg\arg{polynomial}{p}
             mathml: <math><mrow intent="degree-of-polynomial($polynomial)"><mrow><mi>deg</mi><mo>⁡</mo></mrow><mi arg="polynomial">p</mi></mrow></math>
+      - concept: delannoy-number
+        arity: 2
+        en: delannoy number of $a and $b
+        property: function
+        area: combinatorics
+        notations:
+          - tex: D(\arg{a}{m}, \arg{b}{n})
+            mathml: <math><mrow intent="delannoy-number($a,$b)"><mi>D</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">m</mi><mo separator="true">,</mo><mi arg="b">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Delannoy_number
       - concept: dependence-relation
         arity: 2
         en: $value depends on $set
@@ -3591,6 +3635,16 @@ concepts:
         notations:
           - tex: \intent{einstein-tensor}{G}
             mathml: <math><mi intent="einstein-tensor">G</mi></math>
+      - concept: eisenstein-series
+        arity: 2
+        en: eisenstein series of weight $weight at $value
+        property: function
+        area: number theory
+        notations:
+          - tex: E_{\arg{weight}{k}}(\arg{value}{\tau})
+            mathml: <math><mrow intent="eisenstein-series($weight,$value)"><msub><mi>E</mi><mi arg="weight">k</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">τ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Eisenstein_series
       - concept: elliptic-function
         arity: 1
         en: elliptic function of $value
@@ -5727,6 +5781,18 @@ concepts:
         notations:
           - tex: \mathrm{HP}(\arg{number}{n})
             mathml: <math><mrow intent="home-prime($number)"><mi>HP</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: homfly-polynomial
+        arity: 1
+        en: homfly polynomial of $link
+        property: function
+        area: knot theory
+        notations:
+          - tex: P(\arg{link}{L})
+            mathml: <math><mrow intent="homfly-polynomial($link)"><mi>P</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="link">L</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/HOMFLY_polynomial
+        alias:
+          - homflypt-polynomial
       - concept: homology-group
         arity: 2
         en: $number th homology group of $space
@@ -6716,6 +6782,8 @@ concepts:
         notations:
           - tex: J_{\arg{order}{k}}(\arg{value}{n})
             mathml: <math><mrow intent="jordan-totient-function($order,$value)"><msub><mi>J</mi><mi arg="order">k</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        alias:
+          - jordan-totient
       - concept: julia-set
         arity: 1
         en: julia set of $function
@@ -7521,6 +7589,16 @@ concepts:
         notations:
           - tex: \operatorname{Lk}(\arg{value}{v})
             mathml: <math><mrow intent="link($value)"><mi>Lk</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">v</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: linking-number
+        arity: 2
+        en: linking number of $a and $b
+        property: function
+        area: knot theory
+        notations:
+          - tex: \operatorname{lk}(\arg{a}{L}, \arg{b}{M})
+            mathml: <math><mrow intent="linking-number($a,$b)"><mi>lk</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">L</mi><mo separator="true">,</mo><mi arg="b">M</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Linking_number
       - concept: liouville-constant
         arity: 0
         en: liouville constant
@@ -8749,6 +8827,28 @@ concepts:
         notations:
           - tex: \left\{ \arg{quantity}{x} \right\}
             mathml: <math><mrow intent="numerical-part($quantity)"><mo fence="true" form="prefix" stretchy="true">{</mo><mi arg="quantity">x</mi><mo fence="true" form="postfix" stretchy="true">}</mo></mrow></math>
+      - concept: numerical-radius
+        arity: 1
+        en: numerical radius of $operator
+        property: function
+        area: functional analysis
+        notations:
+          - tex: w(\arg{operator}{A})
+            mathml: <math><mrow intent="numerical-radius($operator)"><mi>w</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="operator">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Numerical_range
+      - concept: numerical-range
+        arity: 1
+        en: numerical range of $operator
+        property: function
+        area: functional analysis
+        notations:
+          - tex: W(\arg{operator}{A})
+            mathml: <math><mrow intent="numerical-range($operator)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="operator">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Numerical_range
+        alias:
+          - field-of-values
       - concept: object
         arity: 1
         en: object of $category
@@ -10606,6 +10706,8 @@ concepts:
         notations:
           - tex: S_{\arg{number}{n}}
             mathml: <math><msub intent="schroder-number($number)"><mi>S</mi><mi arg="number">n</mi></msub></math>
+        alias:
+          - schroeder-number
       - concept: schur-complement
         arity: 2
         en: schur complement of $pivot in $block
@@ -10668,6 +10770,16 @@ concepts:
         notations:
           - tex: \lambda'(\arg{number}{n})
             mathml: <math><mrow intent="second-carmichael-function($number)"><msup><mi>λ</mi><mo lspace="0em" rspace="0em">′</mo></msup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: second-fundamental-form
+        arity: 2
+        en: second fundamental form of $a and $b
+        property: function
+        area: differential geometry
+        notations:
+          - tex: \mathrm{II}(\arg{a}{X}, \arg{b}{Y})
+            mathml: <math><mrow intent="second-fundamental-form($a,$b)"><mi>II</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">X</mi><mo separator="true">,</mo><mi arg="b">Y</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Second_fundamental_form
       - concept: sectional-curvature
         arity: 1
         en: sectional curvature of $value
@@ -12367,6 +12479,16 @@ concepts:
             mathml: <math><mi intent="universal-set">U</mi></math>
           - tex: \intent{universal-set}{\xi}
             mathml: <math><mi intent="universal-set">ξ</mi></math>
+      - concept: unknotting-number
+        arity: 1
+        en: unknotting number of $knot
+        property: function
+        area: knot theory
+        notations:
+          - tex: u(\arg{knot}{K})
+            mathml: <math><mrow intent="unknotting-number($knot)"><mi>u</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="knot">K</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Unknotting_number
       - concept: unnatural-isomorphism
         arity: 2
         en: $first is unnaturally isomorphic to $second
@@ -12709,6 +12831,19 @@ concepts:
         notations:
           - tex: \langle \arg{values}{x} \rangle
             mathml: <math><mrow intent="weighted-mean($values)"><mo fence="true" form="prefix" stretchy="false">⟨</mo><mi arg="values">x</mi><mo fence="true" form="postfix" stretchy="false">⟩</mo></mrow></math>
+      - concept: weyl-tensor
+        arity: 4
+        en: weyl tensor with indices $a, $b, $c and $d
+        property: indexed
+        area: differential geometry
+        notations:
+          - tex: C^{\arg{a}{a}}_{\arg{b}{b}\arg{c}{c}\arg{d}{d}}
+            mathml: <math><msubsup intent="weyl-tensor($b,$c,$d,$a)"><mi>C</mi><mrow><mi arg="b">b</mi><mi arg="c">c</mi><mi arg="d">d</mi></mrow><mi arg="a">a</mi></msubsup></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Weyl_tensor
+        alias:
+          - weyl-curvature-tensor
+          - conformal-tensor
       - concept: wheel-graph
         arity: 1
         en: wheel graph on $number vertices

@@ -18,3 +18,18 @@
 {"slug": "wiener-index", "page": "https://en.wikipedia.org/wiki/Wiener_index", "batch": 2, "date": "2026-06-08", "status": "added"}
 {"slug": "lie-bracket", "batch": 2, "date": "2026-06-08", "status": "alias-of:commutator"}
 {"slug": "d-alembertian", "batch": 2, "date": "2026-06-08", "status": "alias-of:dalembert-operator"}
+{"slug": "alexander-polynomial", "page": "https://en.wikipedia.org/wiki/Alexander_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "conway-polynomial", "page": "https://en.wikipedia.org/wiki/Alexander_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "dedekind-sum", "page": "https://en.wikipedia.org/wiki/Dedekind_sum", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "delannoy-number", "page": "https://en.wikipedia.org/wiki/Delannoy_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "eisenstein-series", "page": "https://en.wikipedia.org/wiki/Eisenstein_series", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "homfly-polynomial", "page": "https://en.wikipedia.org/wiki/HOMFLY_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "linking-number", "page": "https://en.wikipedia.org/wiki/Linking_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "numerical-radius", "page": "https://en.wikipedia.org/wiki/Numerical_range", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "numerical-range", "page": "https://en.wikipedia.org/wiki/Numerical_range", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "second-fundamental-form", "page": "https://en.wikipedia.org/wiki/Second_fundamental_form", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "unknotting-number", "page": "https://en.wikipedia.org/wiki/Unknotting_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "weyl-tensor", "page": "https://en.wikipedia.org/wiki/Weyl_tensor", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "clausen-integral", "batch": 3, "date": "2026-06-08", "status": "alias-of:clausen-function"}
+{"slug": "jordan-totient", "batch": 3, "date": "2026-06-08", "status": "alias-of:jordan-totient-function"}
+{"slug": "schroeder-number", "batch": 3, "date": "2026-06-08", "status": "alias-of:schroder-number"}
