@@ -15,5 +15,7 @@ jobs:
         run: yamllint -c _config_yamllint.yml open.yml
       - name: Install PyYAML
         run: pip install pyyaml
-      - name: Structural checks (no duplicate concept+arity)
-        run: python3 scripts/validate_open.py open.yml
+      - name: Fetch W3C Core concept list (for the core-overlap check)
+        run: curl -sSfL -o core.yml https://raw.githubusercontent.com/w3c/mathml-docs/main/_data/core.yml
+      - name: Quality gate (schema, args, arity, core-overlap, legacy, mathml shape)
+        run: python3 scripts/validate_open.py open.yml --core core.yml

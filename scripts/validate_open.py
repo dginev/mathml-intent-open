@@ -1,64 +1,220 @@
 #!/usr/bin/env python3
-"""Structural validation for open.yml (run in CI on every PR).
+"""Quality gate for open.yml — run in CI on every PR; rejects contributions below the bar.
 
-Checks
-------
-1. No duplicate (concept, arity) pairs: a concept name may be overloaded across
-   arities (e.g. disjoint-union at 1 and 2), but each (name, arity) pair must be
-   unique - it is the row identity the editor and the W3C list rely on.
+Each check appends offender lines; any failure exits non-zero with the full list. The bar encodes the
+curation conventions (see scripts/AGENT_CONVENTIONS.md):
 
-The reader accepts both rendering shapes (the legacy `mathml:` list and the
-current `notations:` list of {tex?, mathml} hashes); neither matters for the
-identity checks here.
+  1. schema           every entry has concept(str), arity(int>=0), en(str), notations(non-empty;
+                      each {mathml:str, tex?:str})
+  2. duplicates       (concept, arity) is globally unique (the row identity)
+  3. core-overlap     no slug exactly equal to a W3C Core concept name  (needs --core core.yml)
+  4. arg-names        arg="..." / $refs are letter-initial NCNames; no positional $1 / arg="a1"
+  5. arg-coverage     every $ref in en is marked arg= in a notation, and every arg= is spoken in en
+  6. arity-matches    arity == number of distinct $refs in en (and 0 ⇒ no $refs)
+  7. no-legacy        no free-text notation/notationa/notationb keys
+  8. clean-text       no HTML in en; no '?' in area; no '$N' positional refs in en
+  9. mathml-shape     each notation mathml is a <math>…</math> carrying intent=
 
-(A "no overlap with the W3C Core list" check was considered and deferred -
-to be revisited with the W3C group.)
-
-Usage: python3 scripts/validate_open.py [open.yml]
-Exits non-zero listing every offender when a check fails.
+Usage: python3 scripts/validate_open.py [open.yml] [--core path/to/core.yml]
 """
-
+import re
 import sys
 from collections import Counter
 
 import yaml
 
+# A $ref names an argument (NCName: letter/_-initial, may contain letters/digits/_/-/.; no trailing -/.)
+SPEECH_REF = re.compile(r"\$([A-Za-z0-9_](?:[A-Za-z0-9_.\-]*[A-Za-z0-9_])?)")
+NCNAME = re.compile(r"^[A-Za-z_][A-Za-z0-9_.\-]*$")
+POSITIONAL_ARG = re.compile(r"^[a_]?\d+$")  # 1, a1, _1, a2 … the old positional convention
+ARG_ATTR = re.compile(r"""\barg=["']([^"']+)["']""")
 
-def load_entries(path):
-    """Yield every `intents:` entry across all concept groups."""
-    with open(path, encoding="utf-8") as fh:
-        doc = yaml.safe_load(fh)
+
+def load(path):
+    doc = yaml.safe_load(open(path, encoding="utf-8"))
+    out = []
     for group in (doc or {}).get("concepts") or []:
-        for entry in group.get("intents") or []:
-            if isinstance(entry, dict) and isinstance(entry.get("concept"), str):
-                yield entry
+        out.extend(group.get("intents") or [])
+    return [e for e in out if isinstance(e, dict) and isinstance(e.get("concept"), str)]
+
+
+def core_names(path):
+    core = yaml.safe_load(open(path, encoding="utf-8"))
+    names = set()
+    for grp in core.get("defaultfixity", []):
+        for c in grp.get("concepts", []):
+            if isinstance(c, dict) and c.get("concept"):
+                names.add(c["concept"])
+    return names
+
+
+def tag(e):
+    return f"{e.get('concept')}#{e.get('arity')}"
+
+
+def check_schema(entries):
+    errs = []
+    for e in entries:
+        if not isinstance(e.get("arity"), int) or e["arity"] < 0:
+            errs.append(f"{tag(e)}: arity must be a non-negative integer")
+        if not (isinstance(e.get("en"), str) and e["en"].strip()):
+            errs.append(f"{tag(e)}: missing/empty en")
+        nots = e.get("notations")
+        if not (isinstance(nots, list) and nots):
+            errs.append(f"{tag(e)}: notations must be a non-empty list")
+            continue
+        for i, n in enumerate(nots):
+            if not (isinstance(n, dict) and isinstance(n.get("mathml"), str) and n["mathml"].strip()):
+                errs.append(f"{tag(e)}: notations[{i}] missing mathml")
+            if "tex" in n and not isinstance(n["tex"], str):
+                errs.append(f"{tag(e)}: notations[{i}] tex must be a string")
+    return errs
 
 
 def check_duplicates(entries):
-    """Return error lines for every (concept, arity) pair seen more than once."""
     counts = Counter((e["concept"], e.get("arity")) for e in entries)
     return [
-        f"duplicate (concept, arity): {name!r} at arity {arity} appears {n} times"
-        for (name, arity), n in sorted(counts.items())
-        if n > 1
+        f"duplicate (concept, arity): {n!r} at arity {a} appears {c} times"
+        for (n, a), c in sorted(counts.items())
+        if c > 1
     ]
 
 
+def check_core_overlap(entries, core):
+    return [
+        f"{tag(e)}: slug exactly matches a W3C Core concept name (move to Core or rename)"
+        for e in entries
+        if e["concept"] in core
+    ]
+
+
+def _arg_attrs(e):
+    args = set()
+    for n in e.get("notations") or []:
+        for m in ARG_ATTR.finditer(n.get("mathml", "") or ""):
+            args.add(m.group(1))
+    return args
+
+
+def _en_refs(e):
+    return {m.group(1) for m in SPEECH_REF.finditer(e.get("en", "") or "")}
+
+
+def check_arg_names(entries):
+    errs = []
+    for e in entries:
+        for a in _arg_attrs(e):
+            if POSITIONAL_ARG.match(a):
+                errs.append(f"{tag(e)}: positional arg='{a}' — use a meaningful letter-initial name")
+            elif not NCNAME.match(a):
+                errs.append(f"{tag(e)}: arg='{a}' is not a letter-initial NCName")
+        for r in _en_refs(e):
+            if r[0].isdigit():
+                errs.append(f"{tag(e)}: positional en ref ${r} — use a meaningful name")
+            elif not NCNAME.match(r):
+                errs.append(f"{tag(e)}: en ref ${r} is not a letter-initial NCName")
+    return errs
+
+
+def check_arg_coverage(entries):
+    errs = []
+    for e in entries:
+        refs, args = _en_refs(e), _arg_attrs(e)
+        for r in sorted(refs - args):
+            errs.append(f"{tag(e)}: en uses ${r} but no notation marks arg='{r}'")
+        for a in sorted(args - refs):
+            errs.append(f"{tag(e)}: notation marks arg='{a}' but en never speaks ${a}")
+    return errs
+
+
+def check_arity_matches(entries):
+    errs = []
+    for e in entries:
+        if not isinstance(e.get("arity"), int):
+            continue
+        nrefs = len(_en_refs(e))
+        if e["arity"] != nrefs:
+            errs.append(f"{tag(e)}: arity {e['arity']} but en has {nrefs} distinct $refs")
+    return errs
+
+
+def check_no_legacy(entries):
+    return [
+        f"{tag(e)}: legacy free-text '{k}' key (use notations:)"
+        for e in entries
+        for k in ("notation", "notationa", "notationb")
+        if k in e
+    ]
+
+
+def check_clean_text(entries):
+    errs = []
+    for e in entries:
+        en = e.get("en", "") or ""
+        if re.search(r"<\w+>", en):
+            errs.append(f"{tag(e)}: HTML tag in en")
+        if re.search(r"\$\d", en):
+            errs.append(f"{tag(e)}: positional $N in en")
+        if "?" in (e.get("area") or ""):
+            errs.append(f"{tag(e)}: '?' in area")
+    return errs
+
+
+def check_mathml_shape(entries):
+    errs = []
+    for e in entries:
+        for i, n in enumerate(e.get("notations") or []):
+            mm = n.get("mathml", "") or ""
+            if not (mm.strip().startswith("<math") and mm.strip().endswith("</math>")):
+                errs.append(f"{tag(e)}: notations[{i}] is not a full <math>…</math>")
+            elif "intent=" not in mm:
+                errs.append(f"{tag(e)}: notations[{i}] has no intent= annotation")
+    return errs
+
+
 def main():
-    path = sys.argv[1] if len(sys.argv) > 1 else "open.yml"
-    entries = list(load_entries(path))
+    args = [a for a in sys.argv[1:]]
+    core_path = None
+    if "--core" in args:
+        i = args.index("--core")
+        core_path = args[i + 1]
+        del args[i : i + 2]
+    path = args[0] if args else "open.yml"
+
+    entries = load(path)
     if not entries:
-        print(f"{path}: no concept entries found - is the file shaped correctly?")
+        print(f"{path}: no concept entries found")
         return 1
 
-    errors = check_duplicates(entries)
-    if errors:
-        print(f"{path}: {len(errors)} problem(s):")
-        for line in errors:
-            print(f"  - {line}")
-        return 1
+    checks = [
+        ("schema", check_schema(entries)),
+        ("duplicates", check_duplicates(entries)),
+        ("arg-names", check_arg_names(entries)),
+        ("arg-coverage", check_arg_coverage(entries)),
+        ("arity-matches", check_arity_matches(entries)),
+        ("no-legacy", check_no_legacy(entries)),
+        ("clean-text", check_clean_text(entries)),
+        ("mathml-shape", check_mathml_shape(entries)),
+    ]
+    if core_path:
+        checks.insert(2, ("core-overlap", check_core_overlap(entries, core_names(core_path))))
+    else:
+        print("note: --core not given; skipping core-overlap check")
 
-    print(f"{path}: OK ({len(entries)} entries, no duplicate (concept, arity) pairs)")
+    total = 0
+    for name, errs in checks:
+        if errs:
+            total += len(errs)
+            print(f"\n[{name}] {len(errs)} problem(s):")
+            for line in errs[:50]:
+                print(f"  - {line}")
+            if len(errs) > 50:
+                print(f"  … and {len(errs) - 50} more")
+
+    if total:
+        print(f"\n{path}: FAILED — {total} problem(s) across {len(entries)} entries")
+        return 1
+    print(f"{path}: OK — {len(entries)} entries pass all quality checks")
     return 0
 
 
