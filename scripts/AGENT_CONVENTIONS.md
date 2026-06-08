@@ -11,6 +11,16 @@ expressions instead). So: get the **concept name, arguments, speech, and notatio
 You will receive a chunk of existing entries (JSON). **Do not trust the current values** — they are an
 old, messy draft. Fix names, arities, speech, args, and notations. Each entry needs a decision.
 
+## Inclusion criteria — a concept belongs in Open only if BOTH hold
+
+1. **Speakable & relevant.** It has a clear notation whose **pronunciation differs from its symbolic
+   appearance** — AT needs the intent to say it correctly. `\binom{n}{k}` is "n choose k" (not "n over k
+   in parentheses"); `M/A` is "Schur complement of A in M" (not "M over A"). A notation that is read
+   exactly as it looks adds little and usually does **not** belong.
+2. **Documented.** A healthy encyclopedia page **actually contains** the concept — ideally Wikipedia,
+   otherwise MathWorld / DLMF / nLab / Encyclopedia of Math. Link it in `links`; verify the page truly
+   covers the concept (not merely that the URL resolves), and never invent a URL.
+
 ## Per-entry decision
 
 For every entry, choose an `action`:
@@ -84,9 +94,9 @@ the official Temml engine and stores canonical MathML. Use real LaTeX (`\frac`, 
   `symbol`/`function`/`prefix`/`infix`/`postfix`/`mixfix`/`fenced`/`indexed`/`constant`/`unit`. Don't
   agonize; omit if unsure.
 - **`area`** — the math subfield, lowercase, cleaned (no `?`): e.g. `number theory`, `linear algebra`.
-- **`links`** — keep the existing reference URLs. You MAY add a single canonical reference
-  (Wikipedia / MathWorld / DLMF / nLab / Encyclopedia of Math) if a good one is clearly missing; do not
-  invent URLs.
+- **`links`** — keep the existing reference URLs. Every concept must carry at least one healthy
+  reference that contains it (see Inclusion criteria); add a canonical one (Wikipedia / MathWorld / DLMF
+  / nLab / Encyclopedia of Math) if missing. Never invent URLs.
 - **`alias`** — keep existing alternative names; add obvious synonyms if helpful. **If this concept is
   the same operation as a W3C Core concept under a different name, add that Core name to `alias`** (e.g.
   `additive-inverse` → alias `minus`; `alternation` → alias `or`). Recognize Core matches against the
