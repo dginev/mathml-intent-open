@@ -33,3 +33,19 @@
 {"slug": "clausen-integral", "batch": 3, "date": "2026-06-08", "status": "alias-of:clausen-function"}
 {"slug": "jordan-totient", "batch": 3, "date": "2026-06-08", "status": "alias-of:jordan-totient-function"}
 {"slug": "schroeder-number", "batch": 3, "date": "2026-06-08", "status": "alias-of:schroder-number"}
+{"slug": "parabolic-cylinder-function", "page": "https://en.wikipedia.org/wiki/Parabolic_cylinder_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "pearcey-integral", "page": "https://en.wikipedia.org/wiki/Pearcey_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "prabhakar-function", "page": "https://en.wikipedia.org/wiki/Prabhakar_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "prolate-spheroidal-wave-function", "page": "https://en.wikipedia.org/wiki/Prolate_spheroidal_wave_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "gaussian-q-function", "page": "https://en.wikipedia.org/wiki/Q-function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "quantum-dilogarithm", "page": "https://en.wikipedia.org/wiki/Quantum_dilogarithm", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "ramp-function", "page": "https://en.wikipedia.org/wiki/Ramp_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "real-analytic-eisenstein-series", "page": "https://en.wikipedia.org/wiki/Real_analytic_Eisenstein_series", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "rectangular-function", "page": "https://en.wikipedia.org/wiki/Rectangular_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "scorer-function", "page": "https://en.wikipedia.org/wiki/Scorer%27s_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "selberg-integral", "page": "https://en.wikipedia.org/wiki/Selberg_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "sievert-integral", "page": "https://en.wikipedia.org/wiki/Sievert_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "spin-weighted-spherical-harmonics", "page": "https://en.wikipedia.org/wiki/Spin-weighted_spherical_harmonics", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "spinor-spherical-harmonics", "page": "https://en.wikipedia.org/wiki/Spinor_spherical_harmonics", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "student-t-distribution", "page": "https://en.wikipedia.org/wiki/Student%27s_t-distribution", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "scalar-projection", "page": "https://en.wikipedia.org/wiki/Scalar_projection", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}

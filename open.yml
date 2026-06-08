@@ -4916,6 +4916,18 @@ concepts:
         notations:
           - tex: \intent{gaussian-integers}{\mathbb{Z}[i]}
             mathml: <math><mrow intent="gaussian-integers"><mi>ℤ</mi><mrow><mo fence="true" form="prefix" stretchy="false">[</mo><mi>i</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></mrow></math>
+      - concept: gaussian-q-function
+        arity: 1
+        en: q-function of $value
+        property: function
+        area: probability theory
+        notations:
+          - tex: Q(\arg{value}{x})
+            mathml: <math><mrow intent="gaussian-q-function($value)"><mi>Q</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Q-function
+        alias:
+          - q-function
       - concept: gegenbauer-polynomial
         arity: 3
         en: gegenbauer polynomial of degree $degree and order $order evaluated at $value
@@ -9100,6 +9112,20 @@ concepts:
         notations:
           - tex: P(\arg{number}{n})
             mathml: <math><mrow intent="padovan-sequence($number)"><mi>P</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: parabolic-cylinder-function
+        arity: 2
+        en: parabolic cylinder function $param of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: D_{\arg{param}{\nu}}(\arg{value}{z})
+            mathml: <math><mrow intent="parabolic-cylinder-function($param,$value)"><msub><mi>D</mi><mi arg="param">ν</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+          - tex: U(\arg{param}{a},\arg{value}{z})
+            mathml: <math><mrow intent="parabolic-cylinder-function($param,$value)"><mi>U</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="param">a</mi><mo separator="true">,</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Parabolic_cylinder_function
+        alias:
+          - weber-parabolic-cylinder-function
       - concept: paraboloidal-coordinate
         arity: 3
         en: paraboloidal coordinates $a, $b and $c
@@ -9197,6 +9223,16 @@ concepts:
         notations:
           - tex: \sigma_{\arg{number}{i}}
             mathml: <math><msub intent="pauli-matrix($number)"><mi>σ</mi><mi arg="number">i</mi></msub></math>
+      - concept: pearcey-integral
+        arity: 2
+        en: pearcey integral of $x and $y
+        property: function
+        area: special functions
+        notations:
+          - tex: \mathrm{Pe}(\arg{x}{x},\arg{y}{y})
+            mathml: <math><mrow intent="pearcey-integral($x,$y)"><mi>Pe</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="x">x</mi><mo separator="true">,</mo><mi arg="y">y</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Pearcey_integral
       - concept: peclet-number
         arity: 1
         en: peclet number of $value
@@ -9603,6 +9639,18 @@ concepts:
             mathml: <math><msup intent="power-set($set)"><mn>2</mn><mi arg="set">X</mi></msup></math>
           - tex: \wp(\arg{set}{X})
             mathml: <math><mrow intent="power-set($set)"><mi>℘</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="set">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: prabhakar-function
+        arity: 4
+        en: prabhakar function with parameters $alpha, $beta and $gamma of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: E_{\arg{alpha}{\alpha},\arg{beta}{\beta}}^{\arg{gamma}{\gamma}}(\arg{value}{z})
+            mathml: <math><mrow intent="prabhakar-function($alpha,$beta,$gamma,$value)"><msubsup><mi>E</mi><mrow><mi arg="alpha">α</mi><mo separator="true">,</mo><mi arg="beta">β</mi></mrow><mi arg="gamma">γ</mi></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Prabhakar_function
+        alias:
+          - three-parameter-mittag-leffler-function
       - concept: present-value
         arity: 0
         en: present value
@@ -9745,6 +9793,16 @@ concepts:
         notations:
           - tex: \intent{projective-space}{\mathbb{P}}
             mathml: <math><mi intent="projective-space">ℙ</mi></math>
+      - concept: prolate-spheroidal-wave-function
+        arity: 4
+        en: prolate spheroidal wave function of order $order and degree $degree with $param and $value
+        property: function
+        area: special functions
+        notations:
+          - tex: S_{\arg{order}{m}\arg{degree}{n}}(\arg{param}{c},\arg{value}{\eta})
+            mathml: <math><mrow intent="prolate-spheroidal-wave-function($order,$degree,$param,$value)"><msub><mi>S</mi><mrow><mi arg="order">m</mi><mi arg="degree">n</mi></mrow></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="param">c</mi><mo separator="true">,</mo><mi arg="value">η</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Prolate_spheroidal_wave_function
       - concept: proper-subgroup
         arity: 2
         en: $h is a proper subgroup of $g
@@ -9923,6 +9981,16 @@ concepts:
         notations:
           - tex: \square\arg{value}{ABCD}
             mathml: <math><mrow intent="quadrilateral($value)"><mi>□</mi><mrow arg="value"><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></mrow></math>
+      - concept: quantum-dilogarithm
+        arity: 1
+        en: quantum dilogarithm of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \phi(\arg{value}{x})
+            mathml: <math><mrow intent="quantum-dilogarithm($value)"><mi>ϕ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Quantum_dilogarithm
       - concept: quotient-group
         arity: 2
         en: quotient group of $group by $subgroup
@@ -10071,6 +10139,16 @@ concepts:
         notations:
           - tex: e_{\arg{value}{p}}
             mathml: <math><msub intent="ramification-index($value)"><mi>e</mi><mi arg="value">p</mi></msub></math>
+      - concept: ramp-function
+        arity: 1
+        en: ramp function of $value
+        property: function
+        area: real analysis
+        notations:
+          - tex: R(\arg{value}{x})
+            mathml: <math><mrow intent="ramp-function($value)"><mi>R</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Ramp_function
       - concept: ramsey-number
         arity: 2
         en: ramsey number of $m and $n
@@ -10101,6 +10179,16 @@ concepts:
             mathml: <math><mrow intent="rank($value)"><mi>rk</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: r(\arg{value}{A})
             mathml: <math><mrow intent="rank($value)"><mi>r</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: real-analytic-eisenstein-series
+        arity: 2
+        en: real analytic eisenstein series of $value and $param
+        property: function
+        area: number theory
+        notations:
+          - tex: E(\arg{value}{z},\arg{param}{s})
+            mathml: <math><mrow intent="real-analytic-eisenstein-series($value,$param)"><mi>E</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo separator="true">,</mo><mi arg="param">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Real_analytic_Eisenstein_series
       - concept: real-bipolar
         arity: 1
         en: real bipolar of $set
@@ -10176,6 +10264,23 @@ concepts:
             mathml: <math><msup intent="reciprocal-polynomial($value)"><mi arg="value">p</mi><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">∗</mo></msup></math>
           - tex: "{\\arg{value}{p}}^{R}"
             mathml: <math><msup intent="reciprocal-polynomial($value)"><mi arg="value">p</mi><mi>R</mi></msup></math>
+      - concept: rectangular-function
+        arity: 1
+        en: rectangular function of $value
+        property: function
+        area: signal processing
+        notations:
+          - tex: \operatorname{rect}(\arg{value}{x})
+            mathml: <math><mrow intent="rectangular-function($value)"><mi>rect</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+          - tex: \Pi(\arg{value}{x})
+            mathml: <math><mrow intent="rectangular-function($value)"><mi mathvariant="normal">Π</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Rectangular_function
+        alias:
+          - rect-function
+          - pi-function
+          - gate-function
+          - unit-pulse
       - concept: rectification
         arity: 1
         en: rectification of $value
@@ -10657,6 +10762,21 @@ concepts:
         notations:
           - tex: S^2_{\arg{value}{y}}
             mathml: <math><msubsup intent="sample-variance($value)"><mi>S</mi><mi arg="value">y</mi><mn>2</mn></msubsup></math>
+      - concept: scalar-projection
+        arity: 2
+        en: scalar projection of $vector onto $direction
+        property: function
+        area: linear algebra
+        notations:
+          - tex: \operatorname{comp}_{\arg{direction}{\mathbf{b}}}\arg{vector}{\mathbf{a}}
+            mathml: <math><mrow intent="scalar-projection($direction,$vector)"><msub><mi>comp</mi><mi arg="direction">𝐛</mi></msub><mo>⁡</mo><mi arg="vector">𝐚</mi></mrow></math>
+          - tex: \arg{vector}{\mathbf{a}}_{\arg{direction}{\mathbf{b}}}
+            mathml: <math><msub intent="scalar-projection($vector,$direction)"><mi arg="vector">𝐚</mi><mi arg="direction">𝐛</mi></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Scalar_projection
+        alias:
+          - scalar-resolute
+          - scalar-component
       - concept: scalar-triple-product
         arity: 3
         en: scalar triple product of $a, $b and $c
@@ -10759,6 +10879,20 @@ concepts:
             mathml: <math><mrow intent="schwarzian-derivative($function,$value)"><mi>S</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \{\arg{function}{f},\arg{value}{x}\}
             mathml: <math><mrow intent="schwarzian-derivative($function,$value)"><mo fence="true" form="prefix" stretchy="false">{</mo><mi arg="function">f</mi><mo separator="true">,</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">}</mo></mrow></math>
+      - concept: scorer-function
+        arity: 1
+        en: scorer function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \mathrm{Gi}(\arg{value}{x})
+            mathml: <math><mrow intent="scorer-function($value)"><mi>Gi</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+          - tex: \mathrm{Hi}(\arg{value}{x})
+            mathml: <math><mrow intent="scorer-function($value)"><mi>Hi</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Scorer%27s_function
+        alias:
+          - scorers-function
       - concept: second-carmichael-function
         arity: 1
         en: second Carmichael function of $number
@@ -10804,6 +10938,16 @@ concepts:
         notations:
           - tex: \intent{sedenion}{\mathbb{S}}
             mathml: <math><mi intent="sedenion">𝕊</mi></math>
+      - concept: selberg-integral
+        arity: 4
+        en: selberg integral of dimension $dimension with parameters $alpha, $beta and $gamma
+        property: function
+        area: special functions
+        notations:
+          - tex: S_{\arg{dimension}{n}}(\arg{alpha}{\alpha},\arg{beta}{\beta},\arg{gamma}{\gamma})
+            mathml: <math><mrow intent="selberg-integral($dimension,$alpha,$beta,$gamma)"><msub><mi>S</mi><mi arg="dimension">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="alpha">α</mi><mo separator="true">,</mo><mi arg="beta">β</mi><mo separator="true">,</mo><mi arg="gamma">γ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Selberg_integral
       - concept: selection
         arity: 2
         en: selection from $relation where $predicate
@@ -10917,6 +11061,16 @@ concepts:
         notations:
           - tex: \intent{sidon-sequence}{A}
             mathml: <math><mi intent="sidon-sequence">A</mi></math>
+      - concept: sievert-integral
+        arity: 2
+        en: sievert integral of $value and $angle
+        property: function
+        area: special functions
+        notations:
+          - tex: F(\arg{value}{x},\arg{angle}{\theta})
+            mathml: <math><mrow intent="sievert-integral($value,$angle)"><mi>F</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo separator="true">,</mo><mi arg="angle">θ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Sievert_integral
       - concept: sign-function
         arity: 1
         en: sign of $value
@@ -11269,6 +11423,26 @@ concepts:
         notations:
           - tex: \intent{spin-quantum-number}{s}
             mathml: <math><mi intent="spin-quantum-number">s</mi></math>
+      - concept: spin-weighted-spherical-harmonics
+        arity: 5
+        en: spin-weighted spherical harmonic of spin $spin, degree $degree and order $order at $polar and $azimuth
+        property: function
+        area: special functions
+        notations:
+          - tex: "{}_{\\arg{spin}{s}}Y_{\\arg{degree}{l}\\arg{order}{m}}(\\arg{polar}{\\theta},\\arg{azimuth}{\\phi})"
+            mathml: <math><mrow intent="spin-weighted-spherical-harmonics($spin,$degree,$order,$polar,$azimuth)"><msub><mrow/><mi arg="spin">s</mi></msub><msub><mi>Y</mi><mrow><mi arg="degree">l</mi><mi arg="order">m</mi></mrow></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="polar">θ</mi><mo separator="true">,</mo><mi arg="azimuth">ϕ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Spin-weighted_spherical_harmonics
+      - concept: spinor-spherical-harmonics
+        arity: 3
+        en: spinor spherical harmonic of orbital number $orbital, total $total and order $order
+        property: function
+        area: special functions
+        notations:
+          - tex: Y_{\arg{orbital}{l},\arg{total}{j},\arg{order}{m}}
+            mathml: <math><msub intent="spinor-spherical-harmonics($orbital,$total,$order)"><mi>Y</mi><mrow><mi arg="orbital">l</mi><mo separator="true">,</mo><mi arg="total">j</mi><mo separator="true">,</mo><mi arg="order">m</mi></mrow></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Spinor_spherical_harmonics
       - concept: square
         arity: 4
         en: square $a $b $c $d
@@ -11501,6 +11675,18 @@ concepts:
         notations:
           - tex: \mathbf{H}_{\arg{number}{\nu}}(\arg{value}{z})
             mathml: <math><mrow intent="struve-function($number,$value)"><msub><mi>𝐇</mi><mi arg="number">ν</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: student-t-distribution
+        arity: 1
+        en: student's t-distribution with $degrees degrees of freedom
+        property: function
+        area: probability theory
+        notations:
+          - tex: t_{\arg{degrees}{\nu}}
+            mathml: <math><msub intent="student-t-distribution($degrees)"><mi>t</mi><mi arg="degrees">ν</mi></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Student%27s_t-distribution
+        alias:
+          - t-distribution
       - concept: subfactorial
         arity: 1
         en: subfactorial of $number
