@@ -72,6 +72,19 @@ def check_schema(entries):
     return errs
 
 
+# Slug charset: lowercase, letter-initial, single dashes between segments. Digits ARE allowed
+# (established names carry them: s5-modal-logic, l2-space) — but no uppercase, spaces, or other chars.
+SLUG_RE = re.compile(r"^[a-z][a-z0-9]*(-[a-z0-9]+)*$")
+
+
+def check_slug_charset(entries):
+    return [
+        f"{tag(e)}: slug {e['concept']!r} must be lowercase letters/digits in single-dash segments, letter-initial"
+        for e in entries
+        if not SLUG_RE.match(e["concept"])
+    ]
+
+
 def check_duplicates(entries):
     counts = Counter((e["concept"], e.get("arity")) for e in entries)
     return [
@@ -233,6 +246,7 @@ def main():
 
     checks = [
         ("schema", check_schema(entries)),
+        ("slug-charset", check_slug_charset(entries)),
         ("duplicates", check_duplicates(entries)),
         ("intra-dup", check_intra_dup(entries)),
         ("arg-names", check_arg_names(entries)),

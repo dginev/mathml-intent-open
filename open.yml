@@ -896,7 +896,7 @@ concepts:
             mathml: <math><mrow intent="biconditional($p,$q)"><mi arg="p">P</mi><mo stretchy="false">⇔</mo><mi arg="q">Q</mi></mrow></math>
           - tex: \arg{p}{P} \equiv \arg{q}{Q}
             mathml: <math><mrow intent="biconditional($p,$q)"><mi arg="p">P</mi><mo>≡</mo><mi arg="q">Q</mi></mrow></math>
-      - concept: big-O
+      - concept: big-o
         arity: 1
         en: big O of $function
         property: function
@@ -906,7 +906,7 @@ concepts:
           - https://mathworld.wolfram.com/O.html
         notations:
           - tex: O(\arg{function}{f})
-            mathml: <math><mrow intent="big-O($function)"><mi>O</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+            mathml: <math><mrow intent="big-o($function)"><mi>O</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
       - concept: bigeometric-integral
         arity: 1
         en: bigeometric integral of $function
