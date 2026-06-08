@@ -7777,6 +7777,16 @@ concepts:
         notations:
           - tex: U_{\arg{number}{n}}
             mathml: <math><msub intent="lehmer-number($number)"><mi>U</mi><mi arg="number">n</mi></msub></math>
+      - concept: lemniscate-constant
+        arity: 0
+        en: lemniscate constant
+        property: symbol
+        area: number theory
+        notations:
+          - tex: \intent{lemniscate-constant}{\varpi}
+            mathml: <math><mi intent="lemniscate-constant">ϖ</mi></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lemniscate_constant
       - concept: lemniscate-elliptic-function
         arity: 1
         en: lemniscate elliptic function of $value
@@ -8383,6 +8393,16 @@ concepts:
         notations:
           - tex: M_{\arg{number}{n}}(\arg{ring}{R})
             mathml: <math><mrow intent="matrix-ring($number,$ring)"><msub><mi>M</mi><mi arg="number">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="ring">R</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: matsumoto-zeta-function
+        arity: 1
+        en: matsumoto zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta(\arg{value}{s})
+            mathml: <math><mrow intent="matsumoto-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Matsumoto_zeta_function
       - concept: maximum-degree
         arity: 1
         en: maximum degree of $value
@@ -8549,6 +8569,16 @@ concepts:
             mathml: <math><mrow intent="mills-ratio($value)"><mi>m</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: M(\arg{value}{x})
             mathml: <math><mrow intent="mills-ratio($value)"><mi>M</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: minakshisundaram-pleijel-zeta-function
+        arity: 1
+        en: minakshisundaram pleijel zeta function of $value
+        property: function
+        area: spectral geometry
+        notations:
+          - tex: \zeta(\arg{value}{s})
+            mathml: <math><mrow intent="minakshisundaram-pleijel-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Minakshisundaram%E2%80%93Pleijel_zeta_function
       - concept: minimum-degree
         arity: 1
         en: minimum degree of $graph
@@ -8881,6 +8911,18 @@ concepts:
         notations:
           - tex: \int \cdots \int \arg{function}{f}
             mathml: <math><mrow intent="multiple-integral($function)"><mo movablelimits="false">∫</mo><mo>⋯</mo><mo movablelimits="false">∫</mo><mi arg="function">f</mi></mrow></math>
+      - concept: multiple-zeta-function
+        arity: 2
+        en: multiple zeta function of $a and $b
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta(\arg{a}{s_1}, \arg{b}{s_2})
+            mathml: <math><mrow intent="multiple-zeta-function($a,$b)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><msub arg="a"><mi>s</mi><mn>1</mn></msub><mo separator="true">,</mo><msub arg="b"><mi>s</mi><mn>2</mn></msub><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Multiple_zeta_function
+        alias:
+          - multiple-zeta-value
       - concept: multiplicative-inverse
         arity: 1
         en: multiplicative inverse of $value
@@ -9344,6 +9386,16 @@ concepts:
         notations:
           - tex: \intent{odds-ratio}{\mathrm{OR}}
             mathml: <math><mi intent="odds-ratio">OR</mi></math>
+      - concept: omega-constant
+        arity: 0
+        en: omega constant
+        property: symbol
+        area: number theory
+        notations:
+          - tex: \intent{omega-constant}{\Omega}
+            mathml: <math><mi mathvariant="normal" intent="omega-constant">Ω</mi></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Omega_constant
       - concept: onsager-machlup-function
         arity: 1
         en: onsager-machlup function of $value
@@ -9507,6 +9559,16 @@ concepts:
         notations:
           - tex: m^{*}(\arg{set}{E})
             mathml: <math><mrow intent="outer-jordan-measure($set)"><msup><mi>m</mi><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">∗</mo></msup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="set">E</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: p-adic-l-function
+        arity: 3
+        en: p adic l function of $value and $character to prime $prime
+        property: function
+        area: number theory
+        notations:
+          - tex: L_{\arg{prime}{p}}(\arg{value}{s}, \arg{character}{\chi})
+            mathml: <math><mrow intent="p-adic-l-function($prime,$value,$character)"><msub><mi>L</mi><mi arg="prime">p</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo separator="true">,</mo><mi arg="character">χ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/P-adic_L-function
       - concept: p-core
         arity: 1
         en: p-core of $group
@@ -10140,6 +10202,16 @@ concepts:
         notations:
           - tex: g_{\arg{n}{n}}
             mathml: <math><msub intent="prime-gap($n)"><mi>g</mi><mi arg="n">n</mi></msub></math>
+      - concept: prime-zeta-function
+        arity: 1
+        en: prime zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: P(\arg{value}{s})
+            mathml: <math><mrow intent="prime-zeta-function($value)"><mi>P</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Prime_zeta_function
       - concept: primorial
         arity: 1
         en: primorial of $number
@@ -11003,6 +11075,16 @@ concepts:
             mathml: <math><mrow intent="riemann-integral($function)"><mo movablelimits="false">∫</mo><mi arg="function">f</mi></mrow></math>
           - tex: \int_{a}^{b} \arg{function}{f}(x)\,dx
             mathml: <math><mrow intent="riemann-integral($function)"><msubsup><mo movablelimits="false">∫</mo><mi>a</mi><mi>b</mi></msubsup><mi arg="function">f</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mi>d</mi><mi>x</mi></mrow></math>
+      - concept: riemann-siegel-theta-function
+        arity: 1
+        en: riemann siegel theta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \theta(\arg{value}{t})
+            mathml: <math><mrow intent="riemann-siegel-theta-function($value)"><mi>θ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">t</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Riemann%E2%80%93Siegel_theta_function
       - concept: riemann-sphere
         arity: 0
         en: riemann sphere
@@ -11055,6 +11137,18 @@ concepts:
         notations:
           - tex: \theta(\arg{value}{z})
             mathml: <math><mrow intent="riemann-theta-function($value)"><mi>θ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: riemann-xi-function
+        arity: 1
+        en: riemann xi function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \xi(\arg{value}{s})
+            mathml: <math><mrow intent="riemann-xi-function($value)"><mi>ξ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Riemann_Xi_function
+        alias:
+          - xi-function
       - concept: riemann-zeta-function
         arity: 1
         en: riemann zeta function of $value
@@ -11207,6 +11301,18 @@ concepts:
             mathml: <math><mi intent="ruark-number">Ru</mi></math>
         alias:
           - euler-number
+      - concept: ruelle-zeta-function
+        arity: 1
+        en: ruelle zeta function of $value
+        property: function
+        area: dynamical systems
+        notations:
+          - tex: \zeta(\arg{value}{s})
+            mathml: <math><mrow intent="ruelle-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Ruelle_zeta_function
+        alias:
+          - ruelle-smale-zeta-function
       - concept: s-set-theory
         arity: 0
         en: constructible universe
@@ -11451,6 +11557,16 @@ concepts:
             mathml: <math><mrow intent="selberg-integral($dimension,$alpha,$beta,$gamma)"><msub><mi>S</mi><mi arg="dimension">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="alpha">α</mi><mo separator="true">,</mo><mi arg="beta">β</mi><mo separator="true">,</mo><mi arg="gamma">γ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Selberg_integral
+      - concept: selberg-zeta-function
+        arity: 1
+        en: selberg zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: Z(\arg{value}{s})
+            mathml: <math><mrow intent="selberg-zeta-function($value)"><mi>Z</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Selberg_zeta_function
       - concept: selection
         arity: 2
         en: selection from $relation where $predicate
@@ -11527,6 +11643,16 @@ concepts:
         notations:
           - tex: \mathrm{Sh}(\arg{value}{x})
             mathml: <math><mrow intent="shimura-variety($value)"><mi>Sh</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: shintani-zeta-function
+        arity: 1
+        en: shintani zeta function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta(\arg{value}{s})
+            mathml: <math><mrow intent="shintani-zeta-function($value)"><mi>ζ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Shintani_zeta_function
       - concept: short-exact-sequence
         arity: 3
         en: short exact sequence from $x to $y to $z
@@ -13805,6 +13931,16 @@ concepts:
           - tex: W(\arg{value}{X})
             mathml: <math><mrow intent="witt-vector($value)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         arity: 1
+      - concept: witten-zeta-function
+        arity: 2
+        en: witten zeta function of $group at $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \zeta_{\arg{group}{G}}(\arg{value}{s})
+            mathml: <math><mrow intent="witten-zeta-function($group,$value)"><msub><mi>ζ</mi><mi arg="group">G</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">s</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Witten_zeta_function
       - concept: woodall-number
         arity: 1
         en: woodall number of index $index
@@ -13883,6 +14019,18 @@ concepts:
             mathml: <math><mrow intent="yang-mills-functional($connection)"><mi>ℒ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="connection">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         alias:
           - yang-mills-action
+      - concept: z-function
+        arity: 1
+        en: z function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: Z(\arg{value}{t})
+            mathml: <math><mrow intent="z-function($value)"><mi>Z</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">t</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Z_function
+        alias:
+          - riemann-siegel-z-function
       - concept: z-matrix
         arity: 0
         en: z matrix
