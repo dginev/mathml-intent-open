@@ -2647,6 +2647,16 @@ concepts:
         notations:
           - tex: \intent{coupling-constant}{g}
             mathml: <math><mi intent="coupling-constant">g</mi></math>
+      - concept: courant-bracket
+        arity: 2
+        en: courant bracket of $a and $b
+        property: fenced
+        area: differential geometry
+        notations:
+          - tex: "[\\![\\arg{a}{X}, \\arg{b}{Y}]\\!]"
+            mathml: <math><mrow intent="courant-bracket($a,$b)"><mo fence="true" form="prefix" stretchy="false">[</mo><mrow/><mrow><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">X</mi><mo separator="true">,</mo><mi arg="b">Y</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow><mrow/><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Courant_bracket
       - concept: covariance
         arity: 2
         en: covariance of $x and $y
@@ -4939,6 +4949,16 @@ concepts:
           - https://mathworld.wolfram.com/FresnelIntegrals.html
           - https://en.wikipedia.org/wiki/Fresnel_integral
           - https://dlmf.nist.gov/7.2#E7
+      - concept: frobenius-inner-product
+        arity: 2
+        en: frobenius inner product of $a and $b
+        property: infix
+        area: linear algebra
+        notations:
+          - tex: \langle \arg{a}{A}, \arg{b}{B} \rangle_{F}
+            mathml: <math><msub intent="frobenius-inner-product($a,$b)"><mrow><mo fence="true" form="prefix" stretchy="false">⟨</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo fence="true" form="postfix" stretchy="false">⟩</mo></mrow><mi>F</mi></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Frobenius_inner_product
       - concept: frobenius-norm
         arity: 1
         en: frobenius norm of $matrix
@@ -8113,6 +8133,16 @@ concepts:
         notations:
           - tex: \Omega(\arg{space}{X})
             mathml: <math><mrow intent="loop-space($space)"><mi mathvariant="normal">Ω</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="space">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: lorentz-transformation
+        arity: 0
+        en: lorentz transformation
+        property: symbol
+        area: special relativity
+        notations:
+          - tex: \intent{lorentz-transformation}{\Lambda}
+            mathml: <math><mi mathvariant="normal" intent="lorentz-transformation">Λ</mi></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lorentz_transformation
       - concept: lower-closure-poset
         arity: 1
         en: lower closure of $set
@@ -9173,6 +9203,16 @@ concepts:
         notations:
           - tex: N(\arg{category}{C})
             mathml: <math><mrow intent="nerve($category)"><mi>N</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="category">C</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: nijenhuis-richardson-bracket
+        arity: 2
+        en: nijenhuis richardson bracket of $a and $b
+        property: fenced
+        area: algebra
+        notations:
+          - tex: "[\\arg{a}{A}, \\arg{b}{B}]"
+            mathml: <math><mrow intent="nijenhuis-richardson-bracket($a,$b)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Nijenhuis%E2%80%93Richardson_bracket
       - concept: nome
         arity: 1
         en: nome of $value
@@ -9655,6 +9695,16 @@ concepts:
         notations:
           - tex: \arg{x}{x} \rightrightarrows \arg{y}{y}
             mathml: <math><mrow intent="parallel-morphism($x,$y)"><mi arg="x">x</mi><mo stretchy="false">⇉</mo><mi arg="y">y</mi></mrow></math>
+      - concept: paraproduct
+        arity: 2
+        en: paraproduct of $a and $b
+        property: function
+        area: harmonic analysis
+        notations:
+          - tex: \pi(\arg{a}{f}, \arg{b}{g})
+            mathml: <math><mrow intent="paraproduct($a,$b)"><mi>π</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">f</mi><mo separator="true">,</mo><mi arg="b">g</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Paraproduct
       - concept: partial-charge
         arity: 1
         en: partial charge $sign
@@ -10504,6 +10554,16 @@ concepts:
         notations:
           - tex: \square\arg{value}{ABCD}
             mathml: <math><mrow intent="quadrilateral($value)"><mi>□</mi><mrow arg="value"><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></mrow></math>
+      - concept: quadruple-product
+        arity: 4
+        en: quadruple product of $a, $b, $c and $d
+        property: function
+        area: vector algebra
+        notations:
+          - tex: (\arg{a}{a} \times \arg{b}{b}) \cdot (\arg{c}{c} \times \arg{d}{d})
+            mathml: <math><mrow intent="quadruple-product($a,$b,$c,$d)"><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo>×</mo><mi arg="b">b</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo>⋅</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="c">c</mi><mo>×</mo><mi arg="d">d</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Quadruple_product
       - concept: quantum-dilogarithm
         arity: 1
         en: quantum dilogarithm of $value
@@ -11413,6 +11473,16 @@ concepts:
           - tex: \{\arg{p}{p},\arg{q}{q},\arg{r}{r}\}
             mathml: <math><mrow intent="schlaefli-symbol($p,$q,$r)"><mo fence="true" form="prefix" stretchy="false">{</mo><mi arg="p">p</mi><mo separator="true">,</mo><mi arg="q">q</mi><mo separator="true">,</mo><mi arg="r">r</mi><mo fence="true" form="postfix" stretchy="false">}</mo></mrow></math>
         arity: 3
+      - concept: schouten-nijenhuis-bracket
+        arity: 2
+        en: schouten nijenhuis bracket of $a and $b
+        property: fenced
+        area: differential geometry
+        notations:
+          - tex: "[\\arg{a}{A}, \\arg{b}{B}]"
+            mathml: <math><mrow intent="schouten-nijenhuis-bracket($a,$b)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Schouten%E2%80%93Nijenhuis_bracket
       - concept: schroder-number
         arity: 1
         en: Schroder number of $number
@@ -11602,6 +11672,16 @@ concepts:
         notations:
           - tex: "!\\arg{value}{x}"
             mathml: <math><mrow intent="set-of-invertible-maps($value)"><mo form="postfix" stretchy="false">!</mo><mi arg="value">x</mi></mrow></math>
+      - concept: seven-dimensional-cross-product
+        arity: 2
+        en: seven dimensional cross product of $a and $b
+        property: infix
+        area: algebra
+        notations:
+          - tex: \arg{a}{x} \times \arg{b}{y}
+            mathml: <math><mrow intent="seven-dimensional-cross-product($a,$b)"><mi arg="a">x</mi><mo>×</mo><mi arg="b">y</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Seven-dimensional_cross_product
       - concept: shannon-entropy
         arity: 0
         en: Shannon entropy
@@ -11677,6 +11757,18 @@ concepts:
         notations:
           - tex: \intent{short-rate}{r_t}
             mathml: <math><msub intent="short-rate"><mi>r</mi><mi>t</mi></msub></math>
+      - concept: shriek-map
+        arity: 1
+        en: shriek map of $map
+        property: postfix
+        area: category theory
+        notations:
+          - tex: \arg{map}{f}_{!}
+            mathml: <math><msub intent="shriek-map($map)"><mi arg="map">f</mi><mo form="postfix" stretchy="false" lspace="0em" rspace="0em">!</mo></msub></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Shriek_map
+        alias:
+          - wrong-way-map
       - concept: sidon-sequence
         arity: 0
         en: sidon sequence
@@ -11802,6 +11894,16 @@ concepts:
             mathml: <math><mrow intent="small-o($value)"><mi>o</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         alias:
           - little-o
+      - concept: smash-product
+        arity: 2
+        en: smash product of $a and $b
+        property: infix
+        area: topology
+        notations:
+          - tex: \arg{a}{X} \wedge \arg{b}{Y}
+            mathml: <math><mrow intent="smash-product($a,$b)"><mi arg="a">X</mi><mo>∧</mo><mi arg="b">Y</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Smash_product
       - concept: smith-number
         arity: 1
         en: smith number $number
@@ -12607,6 +12709,16 @@ concepts:
             mathml: <math><mrow intent="szego-polynomial($n,$value)"><msub><mi>ϕ</mi><mi arg="n">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         alias:
           - szego-polynomial-on-the-unit-circle
+      - concept: t-hooft-symbol
+        arity: 3
+        en: t hooft symbol $a $mu $nu
+        property: indexed
+        area: quantum field theory
+        notations:
+          - tex: \eta^{\arg{a}{a}}_{\arg{mu}{\mu}\arg{nu}{\nu}}
+            mathml: <math><msubsup intent="t-hooft-symbol($mu,$nu,$a)"><mi>η</mi><mrow><mi arg="mu">μ</mi><mi arg="nu">ν</mi></mrow><mi arg="a">a</mi></msubsup></math>
+        urls:
+          - https://en.wikipedia.org/wiki/%27t_Hooft_symbol
       - concept: tangent-bundle
         arity: 1
         en: tangent bundle of $manifold
@@ -13953,6 +14065,16 @@ concepts:
         notations:
           - tex: W_{\arg{index}{n}}
             mathml: <math><msub intent="woodall-number($index)"><mi>W</mi><mi arg="index">n</mi></msub></math>
+      - concept: wreath-product
+        arity: 2
+        en: wreath product of $a and $b
+        property: infix
+        area: group theory
+        notations:
+          - tex: \arg{a}{A} \wr \arg{b}{B}
+            mathml: <math><mrow intent="wreath-product($a,$b)"><mi arg="a">A</mi><mo>≀</mo><mi arg="b">B</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Wreath_product
       - concept: wright-function
         arity: 1
         en: wright function of $value
@@ -14004,6 +14126,16 @@ concepts:
             mathml: <math><mrow intent="wronskian($f,$g)"><mi>𝒲</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="f">f</mi><mo separator="true">,</mo><mi arg="g">g</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: W(\arg{f}{f}, \arg{g}{g})
             mathml: <math><mrow intent="wronskian($f,$g)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="f">f</mi><mo separator="true">,</mo><mi arg="g">g</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: wythoff-symbol
+        arity: 3
+        en: wythoff symbol $p $q $r
+        property: fenced
+        area: geometry
+        notations:
+          - tex: \arg{p}{p} \mid \arg{q}{q}\ \arg{r}{r}
+            mathml: <math><mrow intent="wythoff-symbol($p,$q,$r)"><mi arg="p">p</mi><mo lspace="0.22em" rspace="0.22em" stretchy="false">|</mo><mi arg="q">q</mi><mtext> </mtext><mi arg="r">r</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Wythoff_symbol
       - concept: yang-mills-functional
         arity: 1
         en: yang-mills functional of $connection
