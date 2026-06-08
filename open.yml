@@ -491,6 +491,18 @@ concepts:
             mathml: <math><mrow intent="anticommutator($a,$b)"><mo fence="true" form="prefix" stretchy="false">{</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo fence="true" form="postfix" stretchy="false">}</mo></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Commutator
+      - concept: antilogarithm
+        arity: 1
+        en: antilogarithm of $value
+        property: function
+        area: arithmetic
+        notations:
+          - tex: \operatorname{antilog}(\arg{value}{x})
+            mathml: <math><mrow intent="antilogarithm($value)"><mi>antilog</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Logarithm
+        alias:
+          - antilog
       - concept: antiparticle
         arity: 1
         en: antiparticle of $particle
@@ -1269,6 +1281,16 @@ concepts:
             mathml: <math><mrow intent="cardinality($set)"><mi>card</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="set">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: "|\\arg{set}{X}|"
             mathml: <math><mrow intent="cardinality($set)"><mi>|</mi><mi arg="set">X</mi><mi>|</mi></mrow></math>
+      - concept: carlson-symmetric-form
+        arity: 3
+        en: carlson symmetric form of $a, $b and $c
+        property: function
+        area: special functions
+        notations:
+          - tex: R_{F}(\arg{a}{x}, \arg{b}{y}, \arg{c}{z})
+            mathml: <math><mrow intent="carlson-symmetric-form($a,$b,$c)"><msub><mi>R</mi><mi>F</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">x</mi><mo separator="true">,</mo><mi arg="b">y</mi><mo separator="true">,</mo><mi arg="c">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Carlson_symmetric_form
       - concept: carmichael-function
         arity: 1
         en: carmichael function of $number
@@ -1543,6 +1565,18 @@ concepts:
         notations:
           - tex: C_{\arg{degree}{n}}(\arg{value}{x})
             mathml: <math><mrow intent="charlier-polynomial($degree,$value)"><msub><mi>C</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: chebyshev-polynomial
+        arity: 2
+        en: chebyshev polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: T_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="chebyshev-polynomial($degree,$value)"><msub><mi>T</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Chebyshev_polynomials
+        alias:
+          - chebyshev-polynomial-first-kind
       - concept: chebyshev-polynomial-of-first-kind
         arity: 2
         en: chebyshev polynomial of the first kind of degree $degree at $value
@@ -2301,6 +2335,16 @@ concepts:
         notations:
           - tex: a_0 + \cfrac{1}{a_1 + \cfrac{1}{\arg{value}{a_2} + \ddots}}
             mathml: <math><mrow intent="continued-fraction($value)"><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mn>1</mn><mrow><msub arg="value"><mi>a</mi><mn>2</mn></msub><mo>+</mo><mo lspace="0em" rspace="0em">⋱</mo></mrow></mfrac></mstyle></mrow></mfrac></mstyle></mrow></math>
+      - concept: continuous-hahn-polynomial
+        arity: 2
+        en: continuous hahn polynomial of degree $degree at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: p_{\arg{degree}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="continuous-hahn-polynomial($degree,$value)"><msub><mi>p</mi><mi arg="degree">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Continuous_Hahn_polynomials
       - concept: continuum
         arity: 0
         en: cardinality of the continuum
@@ -2631,6 +2675,16 @@ concepts:
         notations:
           - tex: \mathrm{cr}(\arg{value}{G})
             mathml: <math><mrow intent="crossing-number($value)"><mi>cr</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">G</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: cube-root
+        arity: 1
+        en: cube root of $value
+        property: function
+        area: arithmetic
+        notations:
+          - tex: \sqrt[3]{\arg{value}{x}}
+            mathml: <math><mroot intent="cube-root($value)"><mi arg="value">x</mi><mn>3</mn></mroot></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Cube_root
       - concept: cullen-number
         arity: 1
         en: $n th cullen number
@@ -3502,6 +3556,18 @@ concepts:
             mathml: <math><mrow intent="divisor-function($number)"><mi>σ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         alias:
           - sum-of-divisors-function
+      - concept: dixon-elliptic-function
+        arity: 1
+        en: dixon elliptic function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \operatorname{sm}(\arg{value}{z})
+            mathml: <math><mrow intent="dixon-elliptic-function($value)"><mi>sm</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dixon_elliptic_functions
+        alias:
+          - dixon-elliptic-functions
       - concept: domain
         arity: 1
         en: domain of $function
@@ -6112,6 +6178,18 @@ concepts:
             mathml: <math><mrow intent="hyperfactorial($number)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Hyperfactorial
+      - concept: hypergeometric-function
+        arity: 4
+        en: hypergeometric function of $a, $b, $c and $value
+        property: function
+        area: special functions
+        notations:
+          - tex: "{}_2F_1(\\arg{a}{a}, \\arg{b}{b}; \\arg{c}{c}; \\arg{value}{z})"
+            mathml: <math><mrow intent="hypergeometric-function($a,$b,$c,$value)"><msub><mrow/><mn>2</mn></msub><msub><mi>F</mi><mn>1</mn></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo separator="true">;</mo><mi arg="c">c</mi><mo separator="true">;</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hypergeometric_function
+        alias:
+          - gauss-hypergeometric-function
       - concept: hypertorus
         arity: 1
         en: hypertorus of dimension $dimension
@@ -7565,6 +7643,18 @@ concepts:
         notations:
           - tex: U_{\arg{number}{n}}
             mathml: <math><msub intent="lehmer-number($number)"><mi>U</mi><mi arg="number">n</mi></msub></math>
+      - concept: lemniscate-elliptic-function
+        arity: 1
+        en: lemniscate elliptic function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \operatorname{sl}(\arg{value}{z})
+            mathml: <math><mrow intent="lemniscate-elliptic-function($value)"><mi>sl</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lemniscate_elliptic_functions
+        alias:
+          - lemniscate-elliptic-functions
       - concept: lerch-transcendent
         arity: 3
         en: lerch transcendent of $z, $s and $a
@@ -8498,6 +8588,16 @@ concepts:
         notations:
           - tex: \Delta(\arg{value}{\tau})
             mathml: <math><mrow intent="modular-discriminant($value)"><mi mathvariant="normal">Δ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">τ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: modular-lambda-function
+        arity: 1
+        en: modular lambda function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \lambda(\arg{value}{\tau})
+            mathml: <math><mrow intent="modular-lambda-function($value)"><mi>λ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">τ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Modular_lambda_function
       - concept: modulo
         arity: 2
         en: $value modulo $modulus
@@ -8706,6 +8806,16 @@ concepts:
         notations:
           - tex: \left(\!\!\binom{\arg{m}{n}}{\arg{n}{k}}\!\!\right)
             mathml: <math><mrow intent="multiset-coefficient($m,$n)"><mo fence="true" form="prefix" stretchy="true">(</mo><mrow/><mrow/><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi arg="m">n</mi><mi arg="n">k</mi></mfrac><mo fence="true">)</mo></mrow><mrow/><mrow/><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></math>
+      - concept: multivariate-gamma-function
+        arity: 2
+        en: multivariate gamma function of dimension $dimension at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \Gamma_{\arg{dimension}{p}}(\arg{value}{a})
+            mathml: <math><mrow intent="multivariate-gamma-function($dimension,$value)"><msub><mi mathvariant="normal">Γ</mi><mi arg="dimension">p</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">a</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Multivariate_gamma_function
       - concept: multivariate-gaussian-distribution
         arity: 0
         en: multivariate gaussian distribution
@@ -8969,6 +9079,16 @@ concepts:
             mathml: <math><mrow intent="not-divisible-by($n,$m)"><mi arg="n">n</mi><mo>∤</mo><mi arg="m">m</mi></mrow></math>
         alias:
           - does-not-divide
+      - concept: nu-function
+        arity: 1
+        en: nu function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \nu(\arg{value}{x})
+            mathml: <math><mrow intent="nu-function($value)"><mi>ν</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Nu_function
       - concept: nuclear-norm
         arity: 1
         en: nuclear norm of $matrix
@@ -10093,6 +10213,16 @@ concepts:
         alias:
           - q-binomial
           - gaussian-binomial-coefficient
+      - concept: q-gamma-function
+        arity: 2
+        en: q gamma function of $value to base $base
+        property: function
+        area: q-analysis
+        notations:
+          - tex: \Gamma_{\arg{base}{q}}(\arg{value}{x})
+            mathml: <math><mrow intent="q-gamma-function($base,$value)"><msub><mi mathvariant="normal">Γ</mi><mi arg="base">q</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Q-gamma_function
       - concept: q-pochhammer-symbol
         arity: 3
         en: q-pochhammer symbol of $a with base $q and order $n
@@ -10305,6 +10435,16 @@ concepts:
         notations:
           - tex: \tau(\arg{value}{n})
             mathml: <math><mrow intent="ramanujan-tau-function($value)"><mi>τ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: ramanujan-theta-function
+        arity: 2
+        en: ramanujan theta function of $a and $b
+        property: function
+        area: special functions
+        notations:
+          - tex: f(\arg{a}{a}, \arg{b}{b})
+            mathml: <math><mrow intent="ramanujan-theta-function($a,$b)"><mi>f</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Ramanujan_theta_function
       - concept: ramification-index
         arity: 1
         en: ramification index of $value
@@ -10426,6 +10566,16 @@ concepts:
         notations:
           - tex: \mathrm{recc}(\arg{set}{C})
             mathml: <math><mrow intent="recession-cone($set)"><mi>recc</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="set">C</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: reciprocal-gamma-function
+        arity: 1
+        en: reciprocal gamma function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \frac{1}{\Gamma(\arg{value}{z})}
+            mathml: <math><mfrac intent="reciprocal-gamma-function($value)"><mn>1</mn><mrow><mi mathvariant="normal">Γ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></mfrac></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Reciprocal_gamma_function
       - concept: reciprocal-polynomial
         arity: 1
         en: reciprocal polynomial of $value
@@ -10482,6 +10632,18 @@ concepts:
             mathml: <math><mrow intent="reduced-suspension($space)"><mi mathvariant="normal">Σ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="space">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \Sigma\arg{space}{X}
             mathml: <math><mrow intent="reduced-suspension($space)"><mi mathvariant="normal">Σ</mi><mi arg="space">X</mi></mrow></math>
+      - concept: regularized-gamma-function
+        arity: 2
+        en: regularized gamma function of $a at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: P(\arg{a}{a}, \arg{value}{x})
+            mathml: <math><mrow intent="regularized-gamma-function($a,$value)"><mi>P</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Incomplete_gamma_function
+        alias:
+          - regularized-incomplete-gamma-function
       - concept: relative-homology
         arity: 3
         en: $degree th relative homology of $space and $subspace
@@ -12533,6 +12695,18 @@ concepts:
             mathml: <math><mrow intent="triangle-function($value)"><mi>tri</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \Lambda(\arg{value}{x})
             mathml: <math><mrow intent="triangle-function($value)"><mi mathvariant="normal">Λ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: triangular-function
+        arity: 1
+        en: triangular function of $value
+        property: function
+        area: signal processing
+        notations:
+          - tex: \operatorname{tri}(\arg{value}{x})
+            mathml: <math><mrow intent="triangular-function($value)"><mi>tri</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Triangular_function
+        alias:
+          - triangle-function
       - concept: triangular-number
         arity: 1
         en: the $n th triangular number
@@ -12546,6 +12720,18 @@ concepts:
         notations:
           - tex: T_{\arg{n}{n}}
             mathml: <math><msub intent="triangular-number($n)"><mi>T</mi><mi arg="n">n</mi></msub></math>
+      - concept: trigamma-function
+        arity: 1
+        en: trigamma function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \psi_{1}(\arg{value}{x})
+            mathml: <math><mrow intent="trigamma-function($value)"><msub><mi>ψ</mi><mn>1</mn></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Trigamma_function
+        alias:
+          - trigamma
       - concept: trilinear-coordinates
         arity: 3
         en: trilinear coordinates $x, $y, $z
@@ -13017,6 +13203,16 @@ concepts:
         notations:
           - tex: \arg{x}{\alpha} \circ \arg{y}{\beta}
             mathml: <math><mrow intent="vertical-composition($x,$y)"><mi arg="x">α</mi><mo>∘</mo><mi arg="y">β</mi></mrow></math>
+      - concept: voigt-profile
+        arity: 3
+        en: voigt profile of $value with $sigma and $gamma
+        property: function
+        area: special functions
+        notations:
+          - tex: V(\arg{value}{x}; \arg{sigma}{\sigma}, \arg{gamma}{\gamma})
+            mathml: <math><mrow intent="voigt-profile($value,$sigma,$gamma)"><mi>V</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo separator="true">;</mo><mi arg="sigma">σ</mi><mo separator="true">,</mo><mi arg="gamma">γ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Voigt_profile
       - concept: volterra-integral
         arity: 1
         en: volterra integral of $function
