@@ -17,6 +17,7 @@ curation conventions (see scripts/AGENT_CONVENTIONS.md):
 
 Usage: python3 scripts/validate_open.py [open.yml] [--core path/to/core.yml]
 """
+import collections
 import re
 import sys
 from collections import Counter
@@ -85,6 +86,50 @@ def check_core_overlap(entries, core):
         f"{tag(e)}: slug exactly matches a W3C Core concept name (move to Core or rename)"
         for e in entries
         if e["concept"] in core
+    ]
+
+
+def _aliases(e):
+    a = e.get("alias")
+    return set(a) if isinstance(a, list) else set()
+
+
+def check_intra_dup(entries):
+    """Mutual aliases (A lists B and B lists A) mean one concept under two names → merge them."""
+    al = {e["concept"]: _aliases(e) for e in entries}
+    pairs = set()
+    for s, names in al.items():
+        for a in names:
+            if a == s:
+                pairs.add((s, "(self)"))  # a concept listing itself as an alias
+            elif a in al and s in al[a]:
+                pairs.add(tuple(sorted((s, a))))
+    return [f"mutual/self alias {x!r} ↔ {y!r} — same concept under two names; merge (keep one, alias the other)" for x, y in sorted(pairs)]
+
+
+def warn_alias_is_slug(entries):
+    """A one-directional alias pointing at another concept's slug — a possible duplicate to review."""
+    slugs = {e["concept"] for e in entries}
+    out = []
+    for e in entries:
+        for a in sorted(_aliases(e)):
+            if a in slugs and a != e["concept"]:
+                out.append(f"{e['concept']}: alias '{a}' is itself a concept slug (merge candidate?)")
+    return out
+
+
+def warn_speech_collision(entries):
+    """Distinct concepts whose speech template is identical once arg names are blanked → AT would
+    speak them the same. Often fine (e.g. 'degree of X'), but worth an eyeball."""
+    groups = collections.defaultdict(set)
+    for e in entries:
+        norm = re.sub(r"\$[A-Za-z][\w.\-]*", "$_", (e.get("en") or "").strip().lower())
+        if norm:
+            groups[norm].add(e["concept"])
+    return [
+        f"speech '{k}' shared by: {', '.join(sorted(v))}"
+        for k, v in sorted(groups.items())
+        if len(v) > 1
     ]
 
 
@@ -189,6 +234,7 @@ def main():
     checks = [
         ("schema", check_schema(entries)),
         ("duplicates", check_duplicates(entries)),
+        ("intra-dup", check_intra_dup(entries)),
         ("arg-names", check_arg_names(entries)),
         ("arg-coverage", check_arg_coverage(entries)),
         ("arity-matches", check_arity_matches(entries)),
@@ -201,6 +247,12 @@ def main():
     else:
         print("note: --core not given; skipping core-overlap check")
 
+    # Warnings: surfaced for curator review, but they do NOT fail the gate.
+    warnings = [
+        ("alias-is-slug", warn_alias_is_slug(entries)),
+        ("speech-collision", warn_speech_collision(entries)),
+    ]
+
     total = 0
     for name, errs in checks:
         if errs:
@@ -210,6 +262,14 @@ def main():
                 print(f"  - {line}")
             if len(errs) > 50:
                 print(f"  … and {len(errs) - 50} more")
+
+    for name, warns in warnings:
+        if warns:
+            print(f"\n[{name}] {len(warns)} warning(s) (review, non-failing):")
+            for line in warns[:50]:
+                print(f"  ~ {line}")
+            if len(warns) > 50:
+                print(f"  … and {len(warns) - 50} more")
 
     if total:
         print(f"\n{path}: FAILED — {total} problem(s) across {len(entries)} entries")

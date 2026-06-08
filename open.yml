@@ -436,20 +436,6 @@ concepts:
         notations:
           - tex: \intent{angular-velocity}{\omega}
             mathml: <math><mi intent="angular-velocity">ω</mi></math>
-      - concept: anharmonic-ratio
-        arity: 4
-        en: anharmonic ratio of $a, $b, $c and $d
-        property: fenced
-        area: geometry
-        urls:
-          - https://mathworld.wolfram.com/AnharmonicRatio.html
-          - https://en.wikipedia.org/wiki/Cross-ratio
-          - https://www.encyclopediaofmath.org/index.php/Anharmonic_ratio
-        notations:
-          - tex: (\arg{a}{A}, \arg{b}{B}; \arg{c}{C}, \arg{d}{D})
-            mathml: <math><mrow intent="anharmonic-ratio($a,$b,$c,$d)"><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">A</mi><mo separator="true">,</mo><mi arg="b">B</mi><mo separator="true">;</mo><mi arg="c">C</mi><mo separator="true">,</mo><mi arg="d">D</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></math>
-        alias:
-          - cross-ratio
       - concept: annihilator
         arity: 1
         en: annihilator of $value
@@ -894,8 +880,6 @@ concepts:
         notations:
           - tex: b_{\arg{index}{k}}
             mathml: <math><msub intent="betti-number($index)"><mi>b</mi><mi arg="index">k</mi></msub></math>
-        alias:
-          - betti-number
       - concept: biconditional
         arity: 2
         en: $p if and only if $q
@@ -2458,6 +2442,8 @@ concepts:
         urls:
           - https://mathworld.wolfram.com/Cross-Ratio.html
           - https://en.wikipedia.org/wiki/Cross-ratio
+          - https://mathworld.wolfram.com/AnharmonicRatio.html
+          - https://www.encyclopediaofmath.org/index.php/Anharmonic_ratio
         alias:
           - double-ratio
           - anharmonic-ratio
@@ -5242,19 +5228,6 @@ concepts:
             mathml: <math><mrow intent="hankel-function($order,$value)"><msubsup><mi>H</mi><mi arg="order">ν</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>1</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: H_{\arg{order}{\nu}}^{(2)}(\arg{value}{x})
             mathml: <math><mrow intent="hankel-function($order,$value)"><msubsup><mi>H</mi><mi arg="order">ν</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mn>2</mn><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-      - concept: hardy-class
-        arity: 1
-        en: hardy class with exponent $exponent
-        property: indexed
-        area: complex analysis
-        urls:
-          - https://en.wikipedia.org/wiki/Hardy_space
-          - https://www.encyclopediaofmath.org/index.php/Hardy_classes
-        alias:
-          - hardy-space
-        notations:
-          - tex: H^{\arg{exponent}{p}}
-            mathml: <math><msup intent="hardy-class($exponent)"><mi>H</mi><mi arg="exponent">p</mi></msup></math>
       - concept: hardy-littlewood-maximal-operator
         arity: 1
         en: hardy littlewood maximal operator applied to $function
@@ -5278,6 +5251,7 @@ concepts:
           - https://mathworld.wolfram.com/HardySpace.html
           - https://en.wikipedia.org/wiki/Hardy_space
           - https://www.encyclopediaofmath.org/index.php/Hardy_spaces
+          - https://www.encyclopediaofmath.org/index.php/Hardy_classes
         notations:
           - tex: H^{\arg{exponent}{p}}
             mathml: <math><msup intent="hardy-space($exponent)"><mi>H</mi><mi arg="exponent">p</mi></msup></math>
@@ -7210,11 +7184,14 @@ concepts:
           - https://en.wikipedia.org/wiki/Level_(logarithmic_quantity)
           - https://en.wikipedia.org/wiki/Categorical_variable
           - https://ncatlab.org/nlab/show/level
+          - https://en.wikipedia.org/wiki/Stufe_(algebra)
         notations:
           - tex: L_{\arg{value}{x}}
             mathml: <math><msub intent="level($value)"><mi>L</mi><mi arg="value">x</mi></msub></math>
           - tex: L(\arg{value}{x})
             mathml: <math><mrow intent="level($value)"><mi>L</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        alias:
+          - stufe
       - concept: levi-civita-symbol
         arity: 3
         en: levi-civita symbol of $i, $j and $k
@@ -7937,9 +7914,12 @@ concepts:
           - https://en.wikipedia.org/wiki/M%C3%B6bius_function
           - https://dlmf.nist.gov/27.2#E12
           - https://www.encyclopediaofmath.org/index.php/MÃ¶bius_function
+          - https://www.encyclopediaofmath.org/index.php/Moebius_function
         notations:
           - tex: \mu(\arg{number}{n})
             mathml: <math><mrow intent="mobius-function($number)"><mi>μ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        alias:
+          - moebius-function
       - concept: modified-bessel-function-of-first-kind
         arity: 2
         en: modified bessel function of the first kind of order $order at $value
@@ -8047,19 +8027,6 @@ concepts:
         notations:
           - tex: \arg{value}{x} \ (\mathrm{mod}\ \arg{modulus}{p})
             mathml: <math><mrow intent="modulo($value,$modulus)"><mi arg="value">x</mi><mtext> </mtext><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi>mod</mi><mtext> </mtext><mi arg="modulus">p</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-      - concept: moebius-function
-        arity: 1
-        en: moebius function of $number
-        property: function
-        area: number theory
-        urls:
-          - https://www.encyclopediaofmath.org/index.php/Moebius_function
-          - https://en.wikipedia.org/wiki/M%C3%B6bius_function
-        notations:
-          - tex: \mu(\arg{number}{n})
-            mathml: <math><mrow intent="moebius-function($number)"><mi>μ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-        alias:
-          - mobius-function
       - concept: moment
         arity: 0
         en: moment
@@ -8171,19 +8138,6 @@ concepts:
             mathml: <math><msub intent="motzkin-number($number)"><mi>M</mi><mi arg="number">n</mi></msub></math>
           - tex: M(\arg{number}{n})
             mathml: <math><mrow intent="motzkin-number($number)"><mi>M</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-      - concept: multichoose
-        arity: 2
-        en: $m multichoose $n
-        property: fenced
-        area: combinatorics
-        urls:
-          - https://mathworld.wolfram.com/Multiset.html
-        notations:
-          - tex: \left(\!\!\binom{\arg{m}{m}}{\arg{n}{n}}\!\!\right)
-            mathml: <math><mrow intent="multichoose($m,$n)"><mo fence="true" form="prefix" stretchy="true">(</mo><mrow/><mrow/><mrow><mo fence="true">(</mo><mfrac linethickness="0px"><mi arg="m">m</mi><mi arg="n">n</mi></mfrac><mo fence="true">)</mo></mrow><mrow/><mrow/><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></math>
-        alias:
-          - multiset-coefficient
-          - multiset-number
       - concept: multiple-integral
         arity: 1
         en: multiple integral of $function
@@ -8249,6 +8203,7 @@ concepts:
         area: combinatorics
         urls:
           - https://en.wikipedia.org/wiki/Multiset
+          - https://mathworld.wolfram.com/Multiset.html
         alias:
           - multiset-number
           - multichoose
@@ -8455,8 +8410,11 @@ concepts:
         urls:
           - https://mathworld.wolfram.com/Nor.html
           - https://mathworld.wolfram.com/NOR.html
+          - https://www.encyclopediaofmath.org/index.php/Peirce_arrow
         alias:
           - joint-denial
+          - peirce-arrow
+          - quine-dagger
         notations:
           - tex: \arg{x}{x} \downarrow \arg{y}{y}
             mathml: <math><mrow intent="nor($x,$y)"><mi arg="x">x</mi><mo stretchy="false">↓</mo><mi arg="y">y</mi></mrow></math>
@@ -8886,20 +8844,6 @@ concepts:
         notations:
           - tex: \mathrm{Pe}_{\arg{value}{x}}
             mathml: <math><msub intent="peclet-number($value)"><mi>Pe</mi><mi arg="value">x</mi></msub></math>
-      - concept: peirce-arrow
-        arity: 2
-        en: $x nor $y
-        property: infix
-        area: logic
-        urls:
-          - https://www.encyclopediaofmath.org/index.php/Peirce_arrow
-        notations:
-          - tex: \arg{x}{x} \downarrow \arg{y}{y}
-            mathml: <math><mrow intent="peirce-arrow($x,$y)"><mi arg="x">x</mi><mo stretchy="false">↓</mo><mi arg="y">y</mi></mrow></math>
-        alias:
-          - nor
-          - joint-denial
-          - quine-dagger
       - concept: pell-lucas-number
         arity: 1
         en: pell-lucas number $number
@@ -9603,7 +9547,7 @@ concepts:
             mathml: <math><mrow intent="quadrilateral($value)"><mi>□</mi><mrow arg="value"><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></mrow></math>
       - concept: quotient-group
         arity: 2
-        en: $group modulo $subgroup
+        en: quotient group of $group by $subgroup
         property: infix
         area: group theory
         urls:
@@ -9615,7 +9559,7 @@ concepts:
             mathml: <math><mrow intent="quotient-group($group,$subgroup)"><mi arg="group">G</mi><mi>/</mi><mi arg="subgroup">N</mi></mrow></math>
       - concept: quotient-space
         arity: 2
-        en: $space modulo $subspace
+        en: quotient space of $space by $subspace
         property: infix
         area: topology
         urls:
@@ -10333,11 +10277,14 @@ concepts:
         urls:
           - https://mathworld.wolfram.com/ScalarTripleProduct.html
           - https://en.wikipedia.org/wiki/Triple_product
+          - https://mathworld.wolfram.com/TripleScalarProduct.html
         notations:
           - tex: \arg{a}{a}\cdot(\arg{b}{b}\times\arg{c}{c})
             mathml: <math><mrow intent="scalar-triple-product($a,$b,$c)"><mi arg="a">a</mi><mo>⋅</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="b">b</mi><mo>×</mo><mi arg="c">c</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: "[\\arg{a}{a},\\arg{b}{b},\\arg{c}{c}]"
             mathml: <math><mrow intent="scalar-triple-product($a,$b,$c)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo separator="true">,</mo><mi arg="c">c</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
+        alias:
+          - triple-scalar-product
       - concept: scaled-riemann-theta-function
         arity: 1
         en: scaled Riemann theta function of $value
@@ -11133,18 +11080,6 @@ concepts:
         notations:
           - tex: \mathbf{H}_{\arg{number}{\nu}}(\arg{value}{z})
             mathml: <math><mrow intent="struve-function($number,$value)"><msub><mi>𝐇</mi><mi arg="number">ν</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-      - concept: stufe
-        arity: 1
-        en: stufe of $field
-        property: function
-        area: field theory
-        urls:
-          - https://en.wikipedia.org/wiki/Stufe_(algebra)
-        notations:
-          - tex: s(\arg{field}{F})
-            mathml: <math><mrow intent="stufe($field)"><mi>s</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="field">F</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
-        alias:
-          - level
       - concept: subfactorial
         arity: 1
         en: subfactorial of $number
@@ -11838,18 +11773,6 @@ concepts:
         notations:
           - tex: \arg{x}{X}\equiv\arg{y}{Y}
             mathml: <math><mrow intent="triple-bond($x,$y)"><mi arg="x">X</mi><mo>≡</mo><mi arg="y">Y</mi></mrow></math>
-      - concept: triple-scalar-product
-        arity: 3
-        en: triple scalar product of $a, $b and $c
-        property: fenced
-        area: vector algebra
-        urls:
-          - https://mathworld.wolfram.com/TripleScalarProduct.html
-        alias:
-          - scalar-triple-product
-        notations:
-          - tex: "[\\arg{a}{a}, \\arg{b}{b}, \\arg{c}{c}]"
-            mathml: <math><mrow intent="triple-scalar-product($a,$b,$c)"><mo fence="true" form="prefix" stretchy="false">[</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo separator="true">,</mo><mi arg="c">c</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></math>
       - concept: triple-torus
         arity: 0
         en: triple torus
