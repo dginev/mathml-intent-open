@@ -1561,6 +1561,16 @@ concepts:
         notations:
           - tex: \operatorname{crd}(\arg{angle}{\theta})
             mathml: <math><mrow intent="chord($angle)"><mi>crd</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="angle">θ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: christoffel-symbol
+        arity: 3
+        en: christoffel symbol of $k, $i and $j
+        property: indexed
+        area: differential geometry
+        notations:
+          - tex: \Gamma^{\arg{k}{k}}_{\arg{i}{i}\arg{j}{j}}
+            mathml: <math><msubsup intent="christoffel-symbol($i,$j,$k)"><mi mathvariant="normal">Γ</mi><mrow><mi arg="i">i</mi><mi arg="j">j</mi></mrow><mi arg="k">k</mi></msubsup></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Christoffel_symbols
       - concept: christoffel-symbol-of-first-kind
         arity: 3
         en: christoffel symbol of the first kind with indices $i, $j, $k
@@ -2444,6 +2454,16 @@ concepts:
             mathml: <math><mrow intent="covering-relation($x,$y)"><mi arg="x">x</mi><mo>⋖</mo><mi arg="y">y</mi></mrow></math>
           - tex: "\\arg{x}{x} <: \\arg{y}{y}"
             mathml: <math><mrow intent="covering-relation($x,$y)"><mi arg="x">x</mi><mo rspace="0em">&lt;</mo><mo lspace="0em" rspace="0.2222em">:</mo><mi arg="y">y</mi></mrow></math>
+      - concept: cross-entropy
+        arity: 2
+        en: cross entropy of $p and $q
+        property: function
+        area: information theory
+        notations:
+          - tex: H(\arg{p}{p}, \arg{q}{q})
+            mathml: <math><mrow intent="cross-entropy($p,$q)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="p">p</mi><mo separator="true">,</mo><mi arg="q">q</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Cross-entropy
       - concept: cross-ratio
         arity: 4
         en: cross ratio of $a, $b, $c and $d
@@ -4734,6 +4754,16 @@ concepts:
         notations:
           - tex: \arg{value}{x}\,\mathrm{G}
             mathml: <math><mrow intent="gauss($value)"><mi arg="value">x</mi><mi mathvariant="normal">G</mi></mrow></math>
+      - concept: gauss-sum
+        arity: 1
+        en: gauss sum of $character
+        property: function
+        area: number theory
+        notations:
+          - tex: g(\arg{character}{\chi})
+            mathml: <math><mrow intent="gauss-sum($character)"><mi>g</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="character">χ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Gauss_sum
       - concept: gaussian-curvature
         arity: 1
         en: gaussian curvature of $surface
@@ -5568,6 +5598,18 @@ concepts:
         notations:
           - tex: \arg{image}{A} \odot \arg{element}{B}
             mathml: <math><mrow intent="hit-or-miss-transform($image,$element)"><mi arg="image">A</mi><mo>⊙</mo><mi arg="element">B</mi></mrow></math>
+      - concept: hodge-star
+        arity: 1
+        en: hodge star of $form
+        property: prefix
+        area: differential geometry
+        notations:
+          - tex: \star \arg{form}{\omega}
+            mathml: <math><mrow intent="hodge-star($form)"><mo form="prefix" stretchy="false">⋆</mo><mi arg="form">ω</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hodge_star_operator
+        alias:
+          - hodge-dual
       - concept: hodge-star-operator
         arity: 1
         en: hodge star of $value
@@ -7725,6 +7767,16 @@ concepts:
             mathml: <math><mrow intent="matrix-exponential($matrix)"><mrow><mi>exp</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="matrix">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Matrix_exponential
+      - concept: matrix-logarithm
+        arity: 1
+        en: matrix logarithm of $matrix
+        property: function
+        area: linear algebra
+        notations:
+          - tex: \log(\arg{matrix}{A})
+            mathml: <math><mrow intent="matrix-logarithm($matrix)"><mrow><mi>log</mi><mo>⁡</mo></mrow><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="matrix">A</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Logarithm_of_a_matrix
       - concept: matrix-ring
         arity: 2
         en: ring of $number by $number matrices over $ring
@@ -8084,6 +8136,16 @@ concepts:
         notations:
           - tex: \intent{moment}{M}
             mathml: <math><mi intent="moment">M</mi></math>
+      - concept: moment-generating-function
+        arity: 2
+        en: moment generating function of $variable at $value
+        property: function
+        area: probability theory
+        notations:
+          - tex: M_{\arg{variable}{X}}(\arg{value}{t})
+            mathml: <math><mrow intent="moment-generating-function($variable,$value)"><msub><mi>M</mi><mi arg="variable">X</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">t</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Moment-generating_function
       - concept: moment-of-function
         en: $order th moment
         property: indexed
@@ -8503,6 +8565,19 @@ concepts:
             mathml: <math><mrow intent="not-divisible-by($n,$m)"><mi arg="n">n</mi><mo>∤</mo><mi arg="m">m</mi></mrow></math>
         alias:
           - does-not-divide
+      - concept: nuclear-norm
+        arity: 1
+        en: nuclear norm of $matrix
+        property: fenced
+        area: linear algebra
+        notations:
+          - tex: \|\arg{matrix}{A}\|_{*}
+            mathml: <math><mrow intent="nuclear-norm($matrix)"><mi>‖</mi><mi arg="matrix">A</mi><msub><mi>‖</mi><mo form="prefix" stretchy="false" lspace="0em" rspace="0em">∗</mo></msub></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Schatten_norm
+          - https://en.wikipedia.org/wiki/Matrix_norm
+        alias:
+          - trace-norm
       - concept: null-graph
         arity: 1
         en: null graph of order $number
@@ -10374,6 +10449,16 @@ concepts:
         notations:
           - tex: S_{\arg{number}{n}}
             mathml: <math><msub intent="schroder-number($number)"><mi>S</mi><mi arg="number">n</mi></msub></math>
+      - concept: schur-complement
+        arity: 2
+        en: schur complement of $pivot in $block
+        property: infix
+        area: linear algebra
+        notations:
+          - tex: \arg{block}{M}/\arg{pivot}{A}
+            mathml: <math><mrow intent="schur-complement($block,$pivot)"><mi arg="block">M</mi><mi>/</mi><mi arg="pivot">A</mi></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Schur_complement
       - concept: schur-multiplier
         arity: 1
         en: Schur multiplier of $group
@@ -10780,6 +10865,17 @@ concepts:
             mathml: <math><mrow intent="special-unitary-group($number)"><mi>SU</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
           - tex: \mathrm{SU}_{\arg{number}{n}}
             mathml: <math><msub intent="special-unitary-group($number)"><mi>SU</mi><mi arg="number">n</mi></msub></math>
+      - concept: spectral-norm
+        arity: 1
+        en: spectral norm of $matrix
+        property: fenced
+        area: linear algebra
+        notations:
+          - tex: \|\arg{matrix}{A}\|_{2}
+            mathml: <math><mrow intent="spectral-norm($matrix)"><mi>‖</mi><mi arg="matrix">A</mi><msub><mi>‖</mi><mn>2</mn></msub></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Operator_norm
+          - https://en.wikipedia.org/wiki/Matrix_norm
       - concept: spectral-radius
         arity: 1
         en: spectral radius of $matrix
@@ -12283,6 +12379,18 @@ concepts:
         notations:
           - tex: W(\arg{value}{x})
             mathml: <math><mrow intent="walsh-function($value)"><mi>W</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: wasserstein-distance
+        arity: 3
+        en: wasserstein distance of order $order between $a and $b
+        property: function
+        area: probability theory
+        notations:
+          - tex: W_{\arg{order}{p}}(\arg{a}{\mu}, \arg{b}{\nu})
+            mathml: <math><mrow intent="wasserstein-distance($order,$a,$b)"><msub><mi>W</mi><mi arg="order">p</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">μ</mi><mo separator="true">,</mo><mi arg="b">ν</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Wasserstein_metric
+        alias:
+          - earth-movers-distance
       - concept: wavelet-transform
         arity: 2
         en: wavelet transform of $function with wavelet $wavelet
