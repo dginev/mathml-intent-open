@@ -93,3 +93,19 @@
 {"name": "Step function", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
 {"name": "Strömgren integral", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
 {"name": "Triple product", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"slug": "bessel-maitland-function", "page": "https://en.wikipedia.org/wiki/Bessel%E2%80%93Maitland_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "bickley-naylor-function", "page": "https://en.wikipedia.org/wiki/Bickley%E2%80%93Naylor_functions", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "buchstab-function", "page": "https://en.wikipedia.org/wiki/Buchstab_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "chandrasekhar-h-function", "page": "https://en.wikipedia.org/wiki/Chandrasekhar%27s_H-function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "cologarithm", "page": "https://en.wikipedia.org/wiki/Cologarithm", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "complete-fermi-dirac-integral", "page": "https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "confluent-hypergeometric-function", "page": "https://en.wikipedia.org/wiki/Confluent_hypergeometric_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "debye-function", "page": "https://en.wikipedia.org/wiki/Debye_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "dirac-comb", "page": "https://en.wikipedia.org/wiki/Dirac_comb", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "fox-h-function", "page": "https://en.wikipedia.org/wiki/Fox_H-function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "hadamard-gamma-function", "page": "https://en.wikipedia.org/wiki/Hadamard%27s_gamma_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "jacobi-elliptic-function", "page": "https://en.wikipedia.org/wiki/Jacobi_elliptic_functions", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "logistic-function", "page": "https://en.wikipedia.org/wiki/Logistic_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "lommel-polynomial", "page": "https://en.wikipedia.org/wiki/Lommel_polynomial", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "minkowski-question-mark-function", "page": "https://en.wikipedia.org/wiki/Minkowski%27s_question-mark_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "oblate-spheroidal-wave-function", "page": "https://en.wikipedia.org/wiki/Oblate_spheroidal_wave_function", "batch": 5, "date": "2026-06-08", "status": "added"}

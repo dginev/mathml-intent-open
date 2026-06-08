@@ -851,6 +851,18 @@ concepts:
         alias:
           - weber-function
           - neumann-function
+      - concept: bessel-maitland-function
+        arity: 3
+        en: bessel maitland function of order $nu and $mu at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: J_{\arg{nu}{\nu}}^{\arg{mu}{\mu}}(\arg{value}{z})
+            mathml: <math><mrow intent="bessel-maitland-function($nu,$mu,$value)"><msubsup><mi>J</mi><mi arg="nu">ν</mi><mi arg="mu">μ</mi></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Bessel%E2%80%93Maitland_function
+        alias:
+          - wright-bessel-function
       - concept: bessel-polynomial
         arity: 2
         en: $order th bessel polynomial at $value
@@ -912,6 +924,16 @@ concepts:
         notations:
           - tex: b_{\arg{index}{k}}
             mathml: <math><msub intent="betti-number($index)"><mi>b</mi><mi arg="index">k</mi></msub></math>
+      - concept: bickley-naylor-function
+        arity: 2
+        en: bickley naylor function of order $order at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \operatorname{Ki}_{\arg{order}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="bickley-naylor-function($order,$value)"><msub><mi>Ki</mi><mi arg="order">n</mi></msub><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Bickley%E2%80%93Naylor_functions
       - concept: biconditional
         arity: 2
         en: $p if and only if $q
@@ -1164,6 +1186,16 @@ concepts:
             mathml: <math><msub intent="brun-constant"><mi>B</mi><mn>2</mn></msub></math>
           - tex: \intent{brun-constant}{B}
             mathml: <math><mi intent="brun-constant">B</mi></math>
+      - concept: buchstab-function
+        arity: 1
+        en: buchstab function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: \omega(\arg{value}{u})
+            mathml: <math><mrow intent="buchstab-function($value)"><mi>ω</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">u</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Buchstab_function
       - concept: burnside-group
         arity: 2
         en: burnside group on $m generators of exponent $n
@@ -1429,6 +1461,16 @@ concepts:
             mathml: <math><mi intent="champernowne-constant">C</mi></math>
           - tex: \intent{champernowne-constant}{C_{10}}
             mathml: <math><msub intent="champernowne-constant"><mi>C</mi><mn>10</mn></msub></math>
+      - concept: chandrasekhar-h-function
+        arity: 1
+        en: chandrasekhar h function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: H(\arg{value}{\mu})
+            mathml: <math><mrow intent="chandrasekhar-h-function($value)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">μ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Chandrasekhar%27s_H-function
       - concept: character
         arity: 1
         en: character of $group
@@ -1845,6 +1887,18 @@ concepts:
         notations:
           - tex: \operatorname{coker}(\arg{function}{f})
             mathml: <math><mrow intent="cokernel($function)"><mi>coker</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="function">f</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: cologarithm
+        arity: 1
+        en: cologarithm of $value
+        property: function
+        area: arithmetic
+        notations:
+          - tex: \operatorname{colog}(\arg{value}{x})
+            mathml: <math><mrow intent="cologarithm($value)"><mi>colog</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Cologarithm
+        alias:
+          - colog
       - concept: column-vector
         en: column vector with entries $x, $y, $z
         property: fenced
@@ -1947,6 +2001,16 @@ concepts:
         notations:
           - tex: q_1(\arg{value}{k})
             mathml: <math><mrow intent="complementary-nome($value)"><msub><mi>q</mi><mn>1</mn></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">k</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: complete-fermi-dirac-integral
+        arity: 2
+        en: complete fermi dirac integral of order $order at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: F_{\arg{order}{j}}(\arg{value}{x})
+            mathml: <math><mrow intent="complete-fermi-dirac-integral($order,$value)"><msub><mi>F</mi><mi arg="order">j</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral
       - concept: complete-graph
         arity: 1
         en: complete graph on $number vertices
@@ -2096,6 +2160,19 @@ concepts:
         notations:
           - tex: (\arg{points}{p}_{\arg{perPoint}{\gamma}}, \arg{lines}{\ell}_{\arg{perLine}{\pi}})
             mathml: <math><mrow intent="configuration($points,$perPoint,$lines,$perLine)"><mo fence="true" form="prefix" stretchy="false">(</mo><msub><mi arg="points">p</mi><mi arg="perPoint">γ</mi></msub><mo separator="true">,</mo><msub><mi arg="lines">ℓ</mi><mi arg="perLine">π</mi></msub><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></math>
+      - concept: confluent-hypergeometric-function
+        arity: 3
+        en: confluent hypergeometric function of $a, $b and $value
+        property: function
+        area: special functions
+        notations:
+          - tex: M(\arg{a}{a}, \arg{b}{b}, \arg{value}{z})
+            mathml: <math><mrow intent="confluent-hypergeometric-function($a,$b,$value)"><mi>M</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="a">a</mi><mo separator="true">,</mo><mi arg="b">b</mi><mo separator="true">,</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Confluent_hypergeometric_function
+        alias:
+          - kummer-function
+          - kummers-function
       - concept: congruence-relation
         arity: 2
         en: $x is congruent to $y
@@ -2732,6 +2809,16 @@ concepts:
           - https://dlmf.nist.gov/7.2#E6
         alias:
           - dawson-integral-second-kind
+      - concept: debye-function
+        arity: 2
+        en: debye function of order $order at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: D_{\arg{order}{n}}(\arg{value}{x})
+            mathml: <math><mrow intent="debye-function($order,$value)"><msub><mi>D</mi><mi arg="order">n</mi></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Debye_function
       - concept: decrease
         arity: 1
         en: $value decreasing
@@ -3111,6 +3198,20 @@ concepts:
           - https://en.wikipedia.org/wiki/Dirac_adjoint
         alias:
           - dirac-conjugate
+      - concept: dirac-comb
+        arity: 1
+        en: dirac comb of $value
+        property: function
+        area: signal processing
+        notations:
+          - tex: \operatorname{Ш}(\arg{value}{x})
+            mathml: <math><mrow intent="dirac-comb($value)"><mi mathvariant="normal">Ш</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Dirac_comb
+        alias:
+          - shah-function
+          - impulse-train
+          - sampling-function
       - concept: dirac-delta-function
         arity: 1
         en: dirac delta function of $value
@@ -4475,6 +4576,18 @@ concepts:
         notations:
           - tex: \frac{\partial}{\partial \arg{generator}{g}}
             mathml: <math><mfrac intent="fox-derivative($generator)"><mi>∂</mi><mrow><mi>∂</mi><mi arg="generator">g</mi></mrow></mfrac></math>
+      - concept: fox-h-function
+        arity: 1
+        en: fox h function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: \mathrm{H}(\arg{value}{z})
+            mathml: <math><mrow intent="fox-h-function($value)"><mi mathvariant="normal">H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Fox_H-function
+        alias:
+          - fox-h
       - concept: fox-wright-function
         arity: 2
         en: fox-wright function with $p numerator and $q denominator parameters
@@ -5344,6 +5457,16 @@ concepts:
             mathml: <math><mrow intent="gunter-link($value)"><mi arg="value">x</mi><mrow><mi mathvariant="normal">l</mi><mi mathvariant="normal">n</mi><mi mathvariant="normal">k</mi><mi>.</mi></mrow></mrow></math>
         alias:
           - link-unit
+      - concept: hadamard-gamma-function
+        arity: 1
+        en: hadamard gamma function of $value
+        property: function
+        area: special functions
+        notations:
+          - tex: H(\arg{value}{x})
+            mathml: <math><mrow intent="hadamard-gamma-function($value)"><mi>H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Hadamard%27s_gamma_function
       - concept: hadamard-product
         arity: 2
         en: $matrix entrywise product $other
@@ -6591,6 +6714,18 @@ concepts:
         notations:
           - tex: j(\arg{value}{\tau})
             mathml: <math><mrow intent="j-invariant($value)"><mi>j</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">τ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: jacobi-elliptic-function
+        arity: 2
+        en: jacobi elliptic function of $value with modulus $modulus
+        property: function
+        area: special functions
+        notations:
+          - tex: \operatorname{sn}(\arg{value}{u}, \arg{modulus}{k})
+            mathml: <math><mrow intent="jacobi-elliptic-function($value,$modulus)"><mi>sn</mi><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">u</mi><mo separator="true">,</mo><mi arg="modulus">k</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Jacobi_elliptic_functions
+        alias:
+          - jacobi-elliptic-functions
       - concept: jacobi-matrix
         arity: 1
         en: jacobi matrix of $value
@@ -7673,6 +7808,18 @@ concepts:
         notations:
           - tex: E\!\left[\ln^{\arg{order}{n}}(\arg{variable}{X})\right]
             mathml: <math><mrow intent="logarithmic-moment-of-function($order,$variable)"><mi>E</mi><mrow/><mrow><mo fence="true" form="prefix" stretchy="true">[</mo><msup><mi>ln</mi><mi arg="order">n</mi></msup><mo>⁡</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="variable">X</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow><mo fence="true" form="postfix" stretchy="true">]</mo></mrow></mrow></math>
+      - concept: logistic-function
+        arity: 1
+        en: logistic function of $value
+        property: function
+        area: real analysis
+        notations:
+          - tex: \sigma(\arg{value}{x})
+            mathml: <math><mrow intent="logistic-function($value)"><mi>σ</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Logistic_function
+        alias:
+          - expit
       - concept: logit
         arity: 1
         en: logit of $value
@@ -7697,6 +7844,16 @@ concepts:
         notations:
           - tex: s_{\arg{mu}{\mu},\arg{nu}{\nu}}(\arg{value}{z})
             mathml: <math><mrow intent="lommel-function($mu,$nu,$value)"><msub><mi>s</mi><mrow><mi arg="mu">μ</mi><mo separator="true">,</mo><mi arg="nu">ν</mi></mrow></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: lommel-polynomial
+        arity: 3
+        en: lommel polynomial of $m and $nu at $value
+        property: function
+        area: special functions
+        notations:
+          - tex: R_{\arg{m}{m}, \arg{nu}{\nu}}(\arg{value}{z})
+            mathml: <math><mrow intent="lommel-polynomial($m,$nu,$value)"><msub><mi>R</mi><mrow><mi arg="m">m</mi><mo separator="true">,</mo><mi arg="nu">ν</mi></mrow></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Lommel_polynomial
       - concept: long-division
         arity: 2
         en: long division of $dividend by $divisor
@@ -8194,6 +8351,16 @@ concepts:
             mathml: <math><mrow intent="minkowski-difference($first,$second)"><mi arg="first">X</mi><mo>−</mo><mi arg="second">Y</mi></mrow></math>
           - tex: \arg{first}{X} \ominus \arg{second}{Y}
             mathml: <math><mrow intent="minkowski-difference($first,$second)"><mi arg="first">X</mi><mo>⊖</mo><mi arg="second">Y</mi></mrow></math>
+      - concept: minkowski-question-mark-function
+        arity: 1
+        en: minkowski question mark function of $value
+        property: function
+        area: number theory
+        notations:
+          - tex: "{?}(\\arg{value}{x})"
+            mathml: <math><mrow intent="minkowski-question-mark-function($value)"><mo form="postfix" stretchy="false" lspace="0em" rspace="0em">?</mo><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">x</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Minkowski%27s_question-mark_function
       - concept: minkowski-sum
         arity: 2
         en: minkowski sum of $first and $second
@@ -8873,6 +9040,16 @@ concepts:
         notations:
           - tex: \mathrm{Obj}(\arg{category}{C})
             mathml: <math><mrow intent="object($category)"><mi>Obj</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="category">C</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+      - concept: oblate-spheroidal-wave-function
+        arity: 4
+        en: oblate spheroidal wave function of order $order and degree $degree with $param and $value
+        property: function
+        area: special functions
+        notations:
+          - tex: S_{\arg{order}{m}\arg{degree}{n}}(\arg{param}{c}, \arg{value}{\xi})
+            mathml: <math><mrow intent="oblate-spheroidal-wave-function($order,$degree,$param,$value)"><msub><mi>S</mi><mrow><mi arg="order">m</mi><mi arg="degree">n</mi></mrow></msub><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="param">c</mi><mo separator="true">,</mo><mi arg="value">ξ</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+        urls:
+          - https://en.wikipedia.org/wiki/Oblate_spheroidal_wave_function
       - concept: octant
         arity: 3
         en: octant of $x, $y and $z
