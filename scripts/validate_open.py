@@ -14,12 +14,16 @@ curation conventions (see scripts/AGENT_CONVENTIONS.md):
   7. no-legacy        no free-text notation/notationa/notationb keys
   8. clean-text       no HTML in en; no '?' in area; no '$N' positional refs in en
   9. mathml-shape     each notation mathml is a <math>…</math> carrying intent=
+ 10. intent-syntax    each notation's ROOT carries intent=; its concept == slug; and the intent
+                      expression's $refs == the notation's arg= markers (catches a $-less arg ref,
+                      a mismatched concept name, or intent/arg drift)
 
 Usage: python3 scripts/validate_open.py [open.yml] [--core path/to/core.yml]
 """
 import collections
 import re
 import sys
+import xml.etree.ElementTree as ET
 from collections import Counter
 
 import yaml
@@ -29,6 +33,7 @@ SPEECH_REF = re.compile(r"\$([A-Za-z0-9_](?:[A-Za-z0-9_.\-]*[A-Za-z0-9_])?)")
 NCNAME = re.compile(r"^[A-Za-z_][A-Za-z0-9_.\-]*$")
 POSITIONAL_ARG = re.compile(r"^[a_]?\d+$")  # 1, a1, _1, a2 … the old positional convention
 ARG_ATTR = re.compile(r"""\barg=["']([^"']+)["']""")
+INTENT_REF = re.compile(r"\$([A-Za-z0-9_][A-Za-z0-9_.\-]*)")  # a $ref inside an intent expression
 
 
 def load(path):
@@ -230,6 +235,36 @@ def check_mathml_shape(entries):
     return errs
 
 
+def check_intent_syntax(entries):
+    """Verify each notation's ROOT element carries an `intent` whose concept == slug and whose $refs
+    exactly match the notation's `arg=` markers. (Malformed XML is left to mathml-shape.)"""
+    errs = []
+    for e in entries:
+        slug = e["concept"]
+        for i, n in enumerate(e.get("notations") or []):
+            mm = n.get("mathml", "") or ""
+            args = set(ARG_ATTR.findall(mm))
+            try:
+                math = ET.fromstring(mm)
+            except ET.ParseError:
+                continue  # mathml-shape reports malformed markup
+            kids = list(math)
+            root = kids[0] if len(kids) == 1 else math
+            intent = root.get("intent")
+            if intent is None:
+                errs.append(f"{tag(e)}: notations[{i}] root <{root.tag}> has no intent=")
+                continue
+            concept = intent.split("(")[0].split(":")[0].strip()
+            if concept != slug:
+                errs.append(f"{tag(e)}: notations[{i}] intent concept {concept!r} != slug {slug!r}")
+            refs = set(INTENT_REF.findall(intent))
+            if refs != args:
+                errs.append(
+                    f"{tag(e)}: notations[{i}] intent $refs {sorted(refs)} != arg= markers {sorted(args)}"
+                )
+    return errs
+
+
 def main():
     args = [a for a in sys.argv[1:]]
     core_path = None
@@ -255,6 +290,7 @@ def main():
         ("no-legacy", check_no_legacy(entries)),
         ("clean-text", check_clean_text(entries)),
         ("mathml-shape", check_mathml_shape(entries)),
+        ("intent-syntax", check_intent_syntax(entries)),
     ]
     if core_path:
         checks.insert(2, ("core-overlap", check_core_overlap(entries, core_names(core_path))))
