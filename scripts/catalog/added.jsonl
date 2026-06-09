@@ -1,0 +1,174 @@
+{"slug": "barnes-g-function", "page": "https://en.wikipedia.org/wiki/Barnes_G-function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "dirac-adjoint", "page": "https://en.wikipedia.org/wiki/Dirac_adjoint", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "dirichlet-beta-function", "page": "https://en.wikipedia.org/wiki/Dirichlet_beta_function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "hyperfactorial", "page": "https://en.wikipedia.org/wiki/Hyperfactorial", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "k-function", "page": "https://en.wikipedia.org/wiki/K-function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "lerch-transcendent", "page": "https://en.wikipedia.org/wiki/Lerch_transcendent", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "meixner-polynomial", "page": "https://en.wikipedia.org/wiki/Meixner_polynomials", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "nearest-integer-function", "page": "https://en.wikipedia.org/wiki/Nearest_integer_function", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "superfactorial", "page": "https://en.wikipedia.org/wiki/Superfactorial", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "tetration", "page": "https://en.wikipedia.org/wiki/Tetration", "batch": 1, "date": "2026-06-08", "status": "added"}
+{"slug": "chromatic-number", "page": "https://en.wikipedia.org/wiki/Graph_coloring", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "convex-conjugate", "page": "https://en.wikipedia.org/wiki/Convex_conjugate", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "girth", "page": "https://en.wikipedia.org/wiki/Girth_(graph_theory)", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "independence-number", "page": "https://en.wikipedia.org/wiki/Independent_set_(graph_theory)", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "mahalanobis-distance", "page": "https://en.wikipedia.org/wiki/Mahalanobis_distance", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "renyi-entropy", "page": "https://en.wikipedia.org/wiki/R%C3%A9nyi_entropy", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "tutte-polynomial", "page": "https://en.wikipedia.org/wiki/Tutte_polynomial", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "wiener-index", "page": "https://en.wikipedia.org/wiki/Wiener_index", "batch": 2, "date": "2026-06-08", "status": "added"}
+{"slug": "lie-bracket", "batch": 2, "date": "2026-06-08", "status": "alias-of:commutator"}
+{"slug": "d-alembertian", "batch": 2, "date": "2026-06-08", "status": "alias-of:dalembert-operator"}
+{"slug": "alexander-polynomial", "page": "https://en.wikipedia.org/wiki/Alexander_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "conway-polynomial", "page": "https://en.wikipedia.org/wiki/Alexander_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "dedekind-sum", "page": "https://en.wikipedia.org/wiki/Dedekind_sum", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "delannoy-number", "page": "https://en.wikipedia.org/wiki/Delannoy_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "eisenstein-series", "page": "https://en.wikipedia.org/wiki/Eisenstein_series", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "homfly-polynomial", "page": "https://en.wikipedia.org/wiki/HOMFLY_polynomial", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "linking-number", "page": "https://en.wikipedia.org/wiki/Linking_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "numerical-radius", "page": "https://en.wikipedia.org/wiki/Numerical_range", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "numerical-range", "page": "https://en.wikipedia.org/wiki/Numerical_range", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "second-fundamental-form", "page": "https://en.wikipedia.org/wiki/Second_fundamental_form", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "unknotting-number", "page": "https://en.wikipedia.org/wiki/Unknotting_number", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "weyl-tensor", "page": "https://en.wikipedia.org/wiki/Weyl_tensor", "batch": 3, "date": "2026-06-08", "status": "added"}
+{"slug": "clausen-integral", "batch": 3, "date": "2026-06-08", "status": "alias-of:clausen-function"}
+{"slug": "jordan-totient", "batch": 3, "date": "2026-06-08", "status": "alias-of:jordan-totient-function"}
+{"slug": "schroeder-number", "batch": 3, "date": "2026-06-08", "status": "alias-of:schroder-number"}
+{"slug": "parabolic-cylinder-function", "page": "https://en.wikipedia.org/wiki/Parabolic_cylinder_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "pearcey-integral", "page": "https://en.wikipedia.org/wiki/Pearcey_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "prabhakar-function", "page": "https://en.wikipedia.org/wiki/Prabhakar_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "prolate-spheroidal-wave-function", "page": "https://en.wikipedia.org/wiki/Prolate_spheroidal_wave_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "gaussian-q-function", "page": "https://en.wikipedia.org/wiki/Q-function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "quantum-dilogarithm", "page": "https://en.wikipedia.org/wiki/Quantum_dilogarithm", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "ramp-function", "page": "https://en.wikipedia.org/wiki/Ramp_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "real-analytic-eisenstein-series", "page": "https://en.wikipedia.org/wiki/Real_analytic_Eisenstein_series", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "rectangular-function", "page": "https://en.wikipedia.org/wiki/Rectangular_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "scorer-function", "page": "https://en.wikipedia.org/wiki/Scorer%27s_function", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "selberg-integral", "page": "https://en.wikipedia.org/wiki/Selberg_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "sievert-integral", "page": "https://en.wikipedia.org/wiki/Sievert_integral", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "spin-weighted-spherical-harmonics", "page": "https://en.wikipedia.org/wiki/Spin-weighted_spherical_harmonics", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "spinor-spherical-harmonics", "page": "https://en.wikipedia.org/wiki/Spinor_spherical_harmonics", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "student-t-distribution", "page": "https://en.wikipedia.org/wiki/Student%27s_t-distribution", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"slug": "scalar-projection", "page": "https://en.wikipedia.org/wiki/Scalar_projection", "batch": 4, "date": "2026-06-08", "status": "added", "source": "workflow-salvage"}
+{"name": "Alternativity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Anticommutative property", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Antidistributive", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Associative property", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Associativity equation", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Cancellation property", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Commutative property", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Distributive property", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Divisibility (binary operation)", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Egyptian numerals", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Elias delta coding", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Elias gamma coding", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Elias omega coding", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-11", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-123", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-127", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-128", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-129", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-15", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-25", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-250", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-256", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-3", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-3 Gray code", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-32", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-500", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-512", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-6", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Excess-64", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Flexible algebra", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Idempotence", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Jacobi identity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Jordan identity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Leibniz identity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "N-ary associativity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Nil algebra", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Nilpotent algebra", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Pochhammer contour", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Power associativity", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Ruler function", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Spheroidal wave function", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Step function", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Strömgren integral", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"name": "Triple product", "status": "rejected", "source": "workflow-salvage", "date": "2026-06-08"}
+{"slug": "bessel-maitland-function", "page": "https://en.wikipedia.org/wiki/Bessel%E2%80%93Maitland_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "bickley-naylor-function", "page": "https://en.wikipedia.org/wiki/Bickley%E2%80%93Naylor_functions", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "buchstab-function", "page": "https://en.wikipedia.org/wiki/Buchstab_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "chandrasekhar-h-function", "page": "https://en.wikipedia.org/wiki/Chandrasekhar%27s_H-function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "cologarithm", "page": "https://en.wikipedia.org/wiki/Cologarithm", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "complete-fermi-dirac-integral", "page": "https://en.wikipedia.org/wiki/Complete_Fermi%E2%80%93Dirac_integral", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "confluent-hypergeometric-function", "page": "https://en.wikipedia.org/wiki/Confluent_hypergeometric_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "debye-function", "page": "https://en.wikipedia.org/wiki/Debye_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "dirac-comb", "page": "https://en.wikipedia.org/wiki/Dirac_comb", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "fox-h-function", "page": "https://en.wikipedia.org/wiki/Fox_H-function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "hadamard-gamma-function", "page": "https://en.wikipedia.org/wiki/Hadamard%27s_gamma_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "jacobi-elliptic-function", "page": "https://en.wikipedia.org/wiki/Jacobi_elliptic_functions", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "logistic-function", "page": "https://en.wikipedia.org/wiki/Logistic_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "lommel-polynomial", "page": "https://en.wikipedia.org/wiki/Lommel_polynomial", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "minkowski-question-mark-function", "page": "https://en.wikipedia.org/wiki/Minkowski%27s_question-mark_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "oblate-spheroidal-wave-function", "page": "https://en.wikipedia.org/wiki/Oblate_spheroidal_wave_function", "batch": 5, "date": "2026-06-08", "status": "added"}
+{"slug": "antilogarithm", "page": "https://en.wikipedia.org/wiki/Logarithm", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "carlson-symmetric-form", "page": "https://en.wikipedia.org/wiki/Carlson_symmetric_form", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "chebyshev-polynomial", "page": "https://en.wikipedia.org/wiki/Chebyshev_polynomials", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "cube-root", "page": "https://en.wikipedia.org/wiki/Cube_root", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "dixon-elliptic-function", "page": "https://en.wikipedia.org/wiki/Dixon_elliptic_functions", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "hypergeometric-function", "page": "https://en.wikipedia.org/wiki/Hypergeometric_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "lemniscate-elliptic-function", "page": "https://en.wikipedia.org/wiki/Lemniscate_elliptic_functions", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "modular-lambda-function", "page": "https://en.wikipedia.org/wiki/Modular_lambda_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "multivariate-gamma-function", "page": "https://en.wikipedia.org/wiki/Multivariate_gamma_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "nu-function", "page": "https://en.wikipedia.org/wiki/Nu_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "q-gamma-function", "page": "https://en.wikipedia.org/wiki/Q-gamma_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "ramanujan-theta-function", "page": "https://en.wikipedia.org/wiki/Ramanujan_theta_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "reciprocal-gamma-function", "page": "https://en.wikipedia.org/wiki/Reciprocal_gamma_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "regularized-gamma-function", "page": "https://en.wikipedia.org/wiki/Incomplete_gamma_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "triangular-function", "page": "https://en.wikipedia.org/wiki/Triangular_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "trigamma-function", "page": "https://en.wikipedia.org/wiki/Trigamma_function", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "voigt-profile", "page": "https://en.wikipedia.org/wiki/Voigt_profile", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "continuous-hahn-polynomial", "page": "https://en.wikipedia.org/wiki/Continuous_Hahn_polynomials", "batch": 6, "date": "2026-06-08", "status": "added"}
+{"slug": "discrete-chebyshev-polynomial", "page": "https://en.wikipedia.org/wiki/Discrete_Chebyshev_polynomials", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "dual-hahn-polynomial", "page": "https://en.wikipedia.org/wiki/Dual_Hahn_polynomials", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "q-laguerre-polynomial", "page": "https://en.wikipedia.org/wiki/Q-Laguerre_polynomials", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "schur-polynomial", "page": "https://en.wikipedia.org/wiki/Schur_polynomial", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "rook-polynomial", "page": "https://en.wikipedia.org/wiki/Rook_polynomial", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "spherical-harmonics", "page": "https://en.wikipedia.org/wiki/Spherical_harmonics", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "solid-harmonics", "page": "https://en.wikipedia.org/wiki/Solid_harmonics", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "coulomb-wave-function", "page": "https://en.wikipedia.org/wiki/Coulomb_wave_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "bessel-clifford-function", "page": "https://en.wikipedia.org/wiki/Bessel%E2%80%93Clifford_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "bring-radical", "page": "https://en.wikipedia.org/wiki/Bring_radical", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "arithmetic-zeta-function", "page": "https://en.wikipedia.org/wiki/Arithmetic_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "barnes-zeta-function", "page": "https://en.wikipedia.org/wiki/Barnes_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "hasse-weil-zeta-function", "page": "https://en.wikipedia.org/wiki/Hasse%E2%80%93Weil_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "igusa-zeta-function", "page": "https://en.wikipedia.org/wiki/Igusa_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "ihara-zeta-function", "page": "https://en.wikipedia.org/wiki/Ihara_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "artin-l-function", "page": "https://en.wikipedia.org/wiki/Artin_L-function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "goss-zeta-function", "page": "https://en.wikipedia.org/wiki/Goss_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "lefschetz-zeta-function", "page": "https://en.wikipedia.org/wiki/Lefschetz_zeta_function", "batch": 7, "date": "2026-06-08", "status": "added"}
+{"slug": "prime-zeta-function", "page": "https://en.wikipedia.org/wiki/Prime_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "selberg-zeta-function", "page": "https://en.wikipedia.org/wiki/Selberg_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "witten-zeta-function", "page": "https://en.wikipedia.org/wiki/Witten_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "ruelle-zeta-function", "page": "https://en.wikipedia.org/wiki/Ruelle_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "riemann-xi-function", "page": "https://en.wikipedia.org/wiki/Riemann_Xi_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "riemann-siegel-theta-function", "page": "https://en.wikipedia.org/wiki/Riemann%E2%80%93Siegel_theta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "z-function", "page": "https://en.wikipedia.org/wiki/Z_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "p-adic-l-function", "page": "https://en.wikipedia.org/wiki/P-adic_L-function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "multiple-zeta-function", "page": "https://en.wikipedia.org/wiki/Multiple_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "minakshisundaram-pleijel-zeta-function", "page": "https://en.wikipedia.org/wiki/Minakshisundaram%E2%80%93Pleijel_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "shintani-zeta-function", "page": "https://en.wikipedia.org/wiki/Shintani_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "matsumoto-zeta-function", "page": "https://en.wikipedia.org/wiki/Matsumoto_zeta_function", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "omega-constant", "page": "https://en.wikipedia.org/wiki/Omega_constant", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "lemniscate-constant", "page": "https://en.wikipedia.org/wiki/Lemniscate_constant", "batch": 8, "date": "2026-06-08", "status": "added"}
+{"slug": "wreath-product", "page": "https://en.wikipedia.org/wiki/Wreath_product", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "smash-product", "page": "https://en.wikipedia.org/wiki/Smash_product", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "courant-bracket", "page": "https://en.wikipedia.org/wiki/Courant_bracket", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "schouten-nijenhuis-bracket", "page": "https://en.wikipedia.org/wiki/Schouten%E2%80%93Nijenhuis_bracket", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "nijenhuis-richardson-bracket", "page": "https://en.wikipedia.org/wiki/Nijenhuis%E2%80%93Richardson_bracket", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "frobenius-inner-product", "page": "https://en.wikipedia.org/wiki/Frobenius_inner_product", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "wythoff-symbol", "page": "https://en.wikipedia.org/wiki/Wythoff_symbol", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "quadruple-product", "page": "https://en.wikipedia.org/wiki/Quadruple_product", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "seven-dimensional-cross-product", "page": "https://en.wikipedia.org/wiki/Seven-dimensional_cross_product", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "t-hooft-symbol", "page": "https://en.wikipedia.org/wiki/%27t_Hooft_symbol", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "paraproduct", "page": "https://en.wikipedia.org/wiki/Paraproduct", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "shriek-map", "page": "https://en.wikipedia.org/wiki/Shriek_map", "batch": 9, "date": "2026-06-08", "status": "added"}
+{"slug": "lorentz-transformation", "page": "https://en.wikipedia.org/wiki/Lorentz_transformation", "batch": 9, "date": "2026-06-08", "status": "added"}
