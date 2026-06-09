@@ -4742,8 +4742,8 @@ concepts:
         property: function
         area: special functions
         notations:
-          - tex: \mathrm{H}(\arg{value}{z})
-            mathml: <math><mrow intent="fox-h-function($value)"><mi mathvariant="normal">H</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
+          - tex: H^{m,n}_{p,q}(\arg{value}{z})
+            mathml: <math><mrow intent="fox-h-function($value)"><msubsup><mi>H</mi><mrow><mi>p</mi><mo separator="true">,</mo><mi>q</mi></mrow><mrow><mi>m</mi><mo separator="true">,</mo><mi>n</mi></mrow></msubsup><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="value">z</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
         urls:
           - https://en.wikipedia.org/wiki/Fox_H-function
         alias:
@@ -5201,7 +5201,7 @@ concepts:
             mathml: <math><mrow intent="gaussian-integers"><mi>ℤ</mi><mrow><mo fence="true" form="prefix" stretchy="false">[</mo><mi>i</mi><mo fence="true" form="postfix" stretchy="false">]</mo></mrow></mrow></math>
       - concept: gaussian-q-function
         arity: 1
-        en: q-function of $value
+        en: gaussian q function of $value
         property: function
         area: probability theory
         notations:
@@ -9647,7 +9647,7 @@ concepts:
             mathml: <math><mrow intent="padovan-sequence($number)"><mi>P</mi><mrow><mo fence="true" form="prefix" stretchy="false">(</mo><mi arg="number">n</mi><mo fence="true" form="postfix" stretchy="false">)</mo></mrow></mrow></math>
       - concept: parabolic-cylinder-function
         arity: 2
-        en: parabolic cylinder function $param of $value
+        en: parabolic cylinder function of order $param at $value
         property: function
         area: special functions
         notations:
@@ -14181,8 +14181,8 @@ concepts:
         urls:
           - https://en.wikipedia.org/wiki/Z-matrix_(chemistry)
         notations:
-          - tex: \intent{z-matrix-molecule(molecule)}{\begin{pmatrix} \arg{molecule}{a} \end{pmatrix}}
-            mathml: <math><mrow intent="z-matrix-molecule(molecule)"><mo fence="true" form="prefix" stretchy="true">(</mo><mtable><mtr><mtd><mi arg="molecule">a</mi></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></math>
+          - tex: \begin{pmatrix} \arg{molecule}{a} \end{pmatrix}
+            mathml: <math><mrow intent="z-matrix-molecule($molecule)"><mo fence="true" form="prefix" stretchy="true">(</mo><mtable><mtr><mtd><mi arg="molecule">a</mi></mtd></mtr></mtable><mo fence="true" form="postfix" stretchy="true">)</mo></mrow></math>
       - concept: z-transform
         arity: 1
         en: z transform of $function
